@@ -201,7 +201,7 @@
 //GOLD
 /obj/item/roguecoin/gold
 	name = "bullar"
-	desc = "A gold coin bearing the symbol of the Taurus and some other, unimportant symbol. Originally seen as ornaments, a ton of them has been spat out by the LIFE MACHINE."
+	desc = "A gold coin bearing the symbol of Taurus and some other, unimportant symbol. Originally seen as ornaments, a ton of them have been spat out by the LIFE MACHINE."
 	icon_state = "g1"
 	sellprice = 10
 	base_type = CTYPE_GOLD
@@ -220,7 +220,7 @@
 // COPPER
 /obj/item/roguecoin/copper
 	name = "qenny"
-	desc = "A brand-new bronze coin minted by Risvonian capital in an effort to be rid of the financial use of silver."
+	desc = "A brand-new bronze coin minted by the Risvonian capital in an effort to be rid of the financial use of silver."
 	icon_state = "c1"
 	sellprice = 1
 	base_type = CTYPE_COPP
