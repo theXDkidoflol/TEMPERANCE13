@@ -38,6 +38,7 @@
 
 
 /datum/outfit/job/roguetown/commandant/pre_equip(mob/living/carbon/human/H)
+	H.verbs += /mob/living/carbon/human/proc/commandant_raid
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor/pauldrons
@@ -51,8 +52,8 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/ammobag
 	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
-	backl = /obj/item/gun/ballistic/shotgun/risvon
-	backr = /obj/item/gun/ballistic/rifle/repeater/commandant
+	backl = /obj/item/gun/ballistic/rifle/repeater/commandant
+	backr = /obj/item/storage/backpack/rogue/backpack/risvon
 	id = /obj/item/roguekey/risvon
 	backpack_contents = list(
 		/obj/item/ammo_box/clip/pistol = 5,
@@ -78,3 +79,28 @@
 	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
+
+GLOBAL_VAR_INIT(commandant_raid_cooldown, -50000) // Inits variable for later
+
+/mob/living/carbon/human/proc/commandant_raid()
+	set name = "DECLARE RAID"
+	set category = "COMMANDANT"
+	if(stat)
+		return
+	var/announcementinput = input("DECLARE YOUR TARGET", "FORMALIZE RAID") as text|null
+	if(announcementinput)
+		if(!src.can_speak_vocal())
+			to_chat(src,span_warning("I can't speak!"))
+			return FALSE
+		if(world.time < GLOB.commandant_raid_cooldown + 3600 SECONDS)
+			to_chat(src, span_warning("You must wait [round((GLOB.commandant_raid_cooldown + 3600 SECONDS - world.time)/600, 0.1)] minutes before declaring another raid!"))
+			return FALSE
+		visible_message(span_warning("[src] takes a deep breath, reaching into a hidden radio.."))
+		if(do_after(src, 15 SECONDS, target = src))
+			say(announcementinput)
+			priority_announce("[announcementinput]", "RISVONIAN DECLARATION OF WAR", 'sound/misc/risvon_raid.ogg', sender = src)
+			GLOB.commandant_raid_cooldown = world.time
+		else
+			to_chat(src, span_warning("Your announcement was interrupted!"))
+			return FALSE
+

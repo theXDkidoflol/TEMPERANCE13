@@ -37,6 +37,7 @@
 
 
 /datum/outfit/job/roguetown/grandmaster/pre_equip(mob/living/carbon/human/H)
+	H.verbs += /mob/living/carbon/human/proc/grandmaster_raid
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/grandmaster
@@ -73,3 +74,27 @@
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+
+GLOBAL_VAR_INIT(grandmaster_raid_cooldown, -50000) // Antispam
+
+/mob/living/carbon/human/proc/grandmaster_raid()
+	set name = "DECLARE RAID"
+	set category = "GRANDMASTER"
+	if(stat)
+		return
+	var/announcementinput = input("DECLARE YOUR TARGET", "FORMALIZE RAID") as text|null
+	if(announcementinput)
+		if(!src.can_speak_vocal())
+			to_chat(src,span_warning("I can't speak!"))
+			return FALSE
+		if(world.time < GLOB.grandmaster_raid_cooldown + 3600 SECONDS)
+			to_chat(src, span_warning("You must wait [round((GLOB.grandmaster_raid_cooldown + 3600 SECONDS - world.time)/600, 0.1)] minutes before declaring another raid!"))
+			return FALSE
+		visible_message(span_warning("[src] takes a deep breath, reaching into a hidden radio.."))
+		if(do_after(src, 15 SECONDS, target = src))
+			say(announcementinput)
+			priority_announce("[announcementinput]", "PERSERDUNIAN DECLARATION OF WAR", 'sound/misc/perserdun_raid.ogg', sender = src)
+			GLOB.grandmaster_raid_cooldown = world.time
+		else
+			to_chat(src, span_warning("Your announcement was interrupted!"))
+			return FALSE
