@@ -216,3 +216,16 @@
 	SEND_SIGNAL(src, COMSIG_COMPONENT_CLEAN_ACT, CLEAN_STRONG)
 	user.visible_message(span_warning("[user] wipes [src] down with its cloth."),span_notice("I wipe [src] down with its cloth."))
 	return
+
+/obj/item/gun/ballistic/rifle/repeater/mondragon
+	name = "YKA 'Dragoon'"
+	desc = "A straight-bolt action rifle. Usually found in the hands of civilian hunters."
+	icon_state = "dragoon"
+	item_state = "dragoon"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/perserdun
+	slowdown = 0.15
+	spread = 0.5
+	pump_sound = 'sound/combat/ranged/riflecock.ogg'
+	fire_sound = RIFLESHOT
+	load_sound = 'sound/combat/ranged/rifleload.ogg'
+	recoil = 0.15

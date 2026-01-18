@@ -34,7 +34,7 @@
 /obj/item/ammo_box/handfuls/rattlesnake
 	name = "handful of blackout bullets"
 	desc = "A handful of machine-produced blackout bullets."
-	icon_state = "rifle-handful"
+	icon_state = "riflehandful"
 	ammo_type = /obj/item/ammo_casing/a577
 	caliber = "a557"
 	max_ammo = 3

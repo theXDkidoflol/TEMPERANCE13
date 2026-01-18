@@ -6,10 +6,10 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/gunslinger
 	traits_applied = list(TRAIT_OUTLANDER)
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
-	classes = list("Perpretrator" = "In all honesty, you're probably a criminal. You have a double-barreled shotgun, and aren't from here.",
-					"Desperado" = "You might just be a bandit. You carry a mass-produced revolver, and aren't recognized.",
-					"Gangster" = "You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die. Nobody knows you.",
-					"Old-Boy" = "Somehow, you've found a Perserdunian Rifle in your hand. Either through desertion, or by merchants.")
+	classes = list("Perpretrator" = "In all honesty, you're probably a criminal. You have a double-barreled shotgun.",
+					"Desperado" = "You might just be a bandit, or a cowboy lover. You carry a mass-produced revolver.",
+					"Gangster" = "You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die.",
+					"Old-Boy" = "Maybe you inherited your old man's hunting rifle, or bought your own. Try to make something memorable.")
 
 /datum/outfit/job/roguetown/adventurer/gunslinger/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -20,7 +20,7 @@
 	switch(classchoice)
 
 		if("Perpretrator")
-			to_chat(H, span_warning("In all honesty, you're probably a criminal. You have a double-barreled shotgun, and aren't from here."))
+			to_chat(H, span_warning("In all honesty, you're probably a criminal. You have a double-barreled shotgun."))
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/tabard
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -63,7 +63,7 @@
 			H.cmode_music = 'sound/music/cmode/adventurer/combat_gunman.ogg'
 
 		if("Desperado")
-			to_chat(H, span_warning("You might just be a bandit. You carry a mass-produced revolver, and aren't recognized."))
+			to_chat(H, span_warning("You might just be a bandit, or a cowboy lover. You carry a mass-produced revolver."))
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			backl = /obj/item/storage/backpack/rogue/satchel
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -108,7 +108,7 @@
 
 		if("Gangster") //code in pls
 			
-			to_chat(H, span_warning("You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die. Nobody knows you."))
+			to_chat(H, span_warning("You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die."))
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/half/rider/red
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -152,7 +152,7 @@
 
 		if("Old-Boy")
 			
-			to_chat(H, span_warning("Somehow, you've found a Perserdunian Rifle in your hand. Either through desertion, or by merchants."))
+			to_chat(H, span_warning("Maybe you inherited your old man's hunting rifle, or bought your own. Try to make something memorable."))
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/tabard
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -164,7 +164,7 @@
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/gun/ballistic/rifle/repeater/perserdun
+			backr = /obj/item/gun/ballistic/rifle/repeater/mondragon
 			belt = /obj/item/storage/belt/rogue/leather
 			backpack_contents = list(
 				/obj/item/lockpick = 1, 
