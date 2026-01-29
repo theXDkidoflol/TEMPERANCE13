@@ -54,3 +54,7 @@ Very handy, eh?
 /obj/effect/loretile/funnyoutlet
 	name = "Funny Outlet Lore Tile"
 	lore = /datum/loreblurb/funnyoutlet
+
+/obj/effect/loretile/code1
+	name = "Code 1 Lore Tile"
+	lore = /datum/loreblurb/code1

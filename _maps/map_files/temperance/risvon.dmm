@@ -1093,7 +1093,6 @@
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "jM" = (
-/obj/item/roguecoin/silver/pile,
 /obj/effect/landmark/chest_or_mimic/gold,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /obj/effect/decal/cleanable/dirt/grime/dust,
@@ -1294,7 +1293,6 @@
 "lF" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /obj/effect/landmark/chest_or_mimic/gold,
-/obj/item/roguecoin/gold/virtuepile,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /obj/effect/decal/cleanable/dirt/grime/dust,
 /turf/open/floor/rogue/greenstone/glyph5,
@@ -2274,6 +2272,11 @@
 "sW" = (
 /turf/closed/wall/mineral/rogue/risvon/outercorner/dir1,
 /area/rogue/indoors/risvonbasebar)
+"sZ" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/vine,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/risvon)
 "tb" = (
 /turf/closed/wall/mineral/rogue/scary/vertical,
 /area/rogue/under/cave/warmachine)
@@ -3147,7 +3150,6 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/risvon)
 "AY" = (
-/obj/item/roguecoin/silver/pile,
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /obj/effect/landmark/chest_or_mimic/gold,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
@@ -3861,6 +3863,7 @@
 /area/rogue/outdoors/risvon)
 "FP" = (
 /obj/structure/mineral_door/wood/wardoor,
+/obj/effect/loretile/code1,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
 "FQ" = (
@@ -19816,7 +19819,7 @@ cn
 cn
 cn
 dd
-Cx
+sZ
 Cx
 qW
 vo
