@@ -104,17 +104,43 @@ Just because it'd get a LITTLE annoying if you kept seeing this over and over. H
 	sound = 'sound/loredump/lore_sting6.ogg'
 
 /datum/loreblurb/code1
-	title = "PAY ATTENTION"
+	title = "DIVINE MESSAGE"
 	description = "34 15 43 313 26 16 312 61 34 15 43 312 53 26"
 	sound = 'sound/loredump/lore_sting6.ogg'
 
 /datum/loreblurb/apartments
-	title = "APARTMENTS"
+	title = "The Apartments"
 	description = "You're not alone. \n\
 	Whirring, beeping sounds echo throughout the walls."
 	sound = 'sound/loredump/lore_sting6.ogg'
 
 /datum/loreblurb/code2
-	title = "LISTEN CLOSELY"
+	title = "DIVINE MESSAGE"
 	description = "41 231 41 26 312 51 15 52 312 34"
+	sound = 'sound/loredump/lore_sting6.ogg'
+
+/datum/loreblurb/hospital 
+	title = "The Hospital"
+	description = "The stench of antiseptic and decay fills your nostrils. \n\
+	It's rather quiet."
+	sound = 'sound/loredump/lore_sting6.ogg'
+
+/datum/loreblurb/code3
+	title = "DIVINE MESSAGE"
+	description = "132 53 34 231 16 312 41 213"
+	sound = 'sound/loredump/lore_sting6.ogg'
+
+/datum/loreblurb/factory
+	title = "The Factory"
+	description = "Occasional, startling bangs ring throughout the metal tomb. It's oppressive - you feel like you could die at any moment, here.\n\
+	You feel on edge. Hopefully you're not alone. It's caked in rust, dirt, and grime - filth covers both the boots and the gloves. \n\
+	There's a faint smell of oil, gunpowder, and iron in the air."
+	sound = 'sound/loredump/lore_sting6.ogg'
+
+/datum/loreblurb/umamusume
+	title = "41 26 16 51 41 KINEN"
+	description = "2,500 meters. \n\
+	Right-handed. \n\
+	52 41 212 41 61 41 51 41 Racecourse. \n\
+	Though, it looks like this is a left-handed track. Weird."
 	sound = 'sound/loredump/lore_sting6.ogg'

@@ -66,3 +66,19 @@ Very handy, eh?
 /obj/effect/loretile/code2
 	name = "Code 2 Lore Tile"
 	lore = /datum/loreblurb/code2
+
+/obj/effect/loretile/hospital
+	name = "Hospital Lore Tile"
+	lore = /datum/loreblurb/hospital
+
+/obj/effect/loretile/code3
+	name = "Code 3 Lore Tile"
+	lore = /datum/loreblurb/code3
+
+/obj/effect/loretile/factory
+	name = "Factory Lore Tile"
+	lore = /datum/loreblurb/factory
+
+/obj/effect/loretile/umamusume
+	name = "Umamusume Lore Tile"
+	lore = /datum/loreblurb/umamusume

@@ -1,14 +1,47 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/structure/closet/crate/roguecloset/metal{
+	pixel_x = -7
+	},
+/obj/structure/closet/crate/roguecloset/metal{
+	pixel_x = 11
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "ai" = (
 /obj/effect/decal/cleanable/dirt/grime/grime3,
 /turf/closed/wall/mineral/rogue/scary/horizontal,
 /area/rogue/under/cave/warmachine)
+"am" = (
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"aq" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/cheap_clutter_spawner,
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "at" = (
 /obj/structure/table/wood/longreif{
 	dir = 2
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"aE" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 5
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/dungeon1)
+"aF" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/closed/wall/mineral/rogue/scary/vertical,
+/area/rogue/under/cave/dungeon1)
 "aJ" = (
 /obj/effect/decal/loader{
 	dir = 1
@@ -42,6 +75,12 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"bi" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 2
+	},
+/turf/open/lava/acid,
+/area/rogue/under/cave/dungeon1)
 "bj" = (
 /obj/structure/fluff/walldeco/computer/captainoff,
 /obj/structure/table/wood/longreif{
@@ -135,6 +174,14 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"cO" = (
+/obj/effect/decal/bodiesflipped{
+	pixel_y = 1;
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/rogue/robot/gunner/shotgun,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "cP" = (
 /obj/effect/decal/cleanable/dirt/grime,
 /obj/effect/decal/cleanable/dirt/grime/grime2,
@@ -251,6 +298,24 @@
 /obj/effect/decal/ob,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"dY" = (
+/obj/structure/mineral_door/wood/wardoor,
+/obj/effect/loretile/hospital,
+/turf/open/floor/rogue/med,
+/area/rogue/under/cave/warmachine)
+"ea" = (
+/obj/structure/chair/stool/rogue,
+/obj/structure/mannequin/male{
+	layer = 5;
+	dir = 2
+	},
+/obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
+/obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
+/obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
+/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
+/obj/item/clothing/gloves/roguetown/leather/ebgloves,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "eb" = (
 /obj/structure/spider/stickyweb/mirespider,
 /turf/open/floor/rogue/grime,
@@ -259,6 +324,12 @@
 /obj/effect/decal/cleanable/dirt/grime/grime3,
 /turf/closed/wall/mineral/rogue/scary/end/west,
 /area/rogue/under/cave/warmachine)
+"eu" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "eA" = (
 /obj/structure/mannequin/male,
 /turf/open/floor/rogue/warmetal,
@@ -304,10 +375,44 @@
 /mob/living/simple_animal/hostile/rogue/robot/gunner/rifle,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"eO" = (
+/obj/structure/table/wood/longreif{
+	dir = 4
+	},
+/obj/item/flashlight/flare/torch/lantern/tablelamp/prelit{
+	light_outer_range = 2;
+	pixel_x = 4;
+	pixel_y = 14
+	},
+/obj/effect/spawner/lootdrop/ammo,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"eU" = (
+/obj/structure/chair/bench/church/smallbench,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"eX" = (
+/obj/structure/table/wood/longreif{
+	dir = 2
+	},
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "fo" = (
 /obj/structure/closet/crate/drawer/filing/alt2,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"fv" = (
+/obj/effect/decal/mailbox,
+/obj/effect/decal/ob,
+/obj/structure/fluff/walldeco/traumacon{
+	pixel_y = 25;
+	light_outer_range = 1
+	},
+/obj/effect/decal/cleanable/dirt/grime/dust,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "fC" = (
 /obj/structure/table/wood/perserdunsmall,
 /turf/open/floor/rogue/warmetal,
@@ -324,6 +429,13 @@
 /obj/item/ash,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"fJ" = (
+/obj/structure/chair/bench/comfychair{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/rogue/robot/gunner/rifle,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "fN" = (
 /obj/structure/mineral_door/wood/fancy,
 /turf/open/floor/rogue/grime,
@@ -353,6 +465,11 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"gs" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "gx" = (
 /obj/structure/chair/wood/rogue/metal,
 /obj/structure/fluff/walldeco/bigpainting/lake,
@@ -369,6 +486,11 @@
 /obj/effect/spawner/lootdrop/normalguns,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"gC" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "gF" = (
 /obj/effect/decal/cleanable/dirt/grime/dust,
 /mob/living/simple_animal/hostile/rogue/robot,
@@ -389,11 +511,32 @@
 	},
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"gY" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/structure/mineral_door/wood/wardoor,
+/obj/effect/loretile/factory,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"hd" = (
+/obj/structure/stairs/stone{
+	dir = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "hl" = (
 /obj/effect/decal/cleanable/dirt/grime/grime3,
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"hm" = (
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "hr" = (
 /obj/structure/closet/crate/drawer/random,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
@@ -423,8 +566,25 @@
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"hJ" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/closed/wall/mineral/rogue/scary,
+/area/rogue/under/cave/dungeon1)
 "hO" = (
 /turf/closed/wall/mineral/rogue/scary/end/north,
+/area/rogue/under/cave/dungeon1)
+"hR" = (
+/obj/effect/decal/bodies{
+	dir = 8
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"hS" = (
+/obj/effect/decal/bodies{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
 "hX" = (
 /obj/structure/fluff/traveltile{
@@ -436,6 +596,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"id" = (
+/obj/effect/decal/loader{
+	dir = 8;
+	plane = -6
+	},
+/turf/closed/wall/mineral/rogue/scary,
+/area/rogue/under/cave/dungeon1)
 "if" = (
 /obj/effect/decal/bodies{
 	dir = 1
@@ -466,6 +633,12 @@
 "iF" = (
 /turf/closed/wall/mineral/rogue/scary/vertical,
 /area/rogue/under/cave/warmachine)
+"iK" = (
+/obj/structure/closet/crate/drawer/filing/random,
+/obj/effect/spawner/lootdrop/normalguns,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "jb" = (
 /obj/effect/decal/cleanable/debris/stony{
 	dir = 8
@@ -476,6 +649,16 @@
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"je" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 4
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"jr" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/gethsmane,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "jt" = (
 /obj/effect/decal/cleanable/dirt/grime/grime2,
 /obj/effect/decal/cleanable/dirt/grime/grime3,
@@ -550,10 +733,21 @@
 /obj/effect/spawner/lootdrop/ammo,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"kv" = (
+/obj/structure/table/wood/longreif{
+	dir = 2
+	},
+/obj/effect/spawner/lootdrop/ammo,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "kB" = (
 /obj/structure/table/wood/longreif{
 	dir = 4
 	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"kL" = (
+/obj/item/rogueweapon/pick/copper,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
 "kO" = (
@@ -581,6 +775,23 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"lb" = (
+/obj/structure/closet/crate/drawer/filing/alt3,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"le" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"lk" = (
+/obj/effect/decal/bodiesflipped{
+	pixel_y = 1;
+	dir = 4
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "lm" = (
 /obj/effect/decal/remains/corpse/charred/charred5,
 /turf/open/floor/rogue/warmetal,
@@ -591,6 +802,15 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"lr" = (
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "lF" = (
 /obj/structure/table/wood/longreif{
 	dir = 4
@@ -605,6 +825,15 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"lN" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "umastart"
+	},
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "lP" = (
 /obj/effect/decal/cleanable/dirt/grime/grime2,
 /obj/effect/decal/cleanable/dirt/grime/grime3,
@@ -681,9 +910,22 @@
 /obj/effect/decal/cleanable/dirt/grime/dust,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"nn" = (
+/mob/living/simple_animal/hostile/rogue/robot/gunner/rifle,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "no" = (
 /turf/open/water/sewer,
 /area/rogue/under/cave/warmachine)
+"np" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"nt" = (
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "nu" = (
 /obj/structure/closet/crate/drawer/filing/alt2,
 /obj/effect/spawner/lootdrop/medicines,
@@ -710,6 +952,17 @@
 /area/rogue/under/cave/warmachine)
 "nY" = (
 /obj/structure/closet/crate/drawer/filing,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"oe" = (
+/obj/structure/table/wood/longreif{
+	dir = 1
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"oq" = (
+/mob/living/simple_animal/hostile/rogue/robot/gunner,
+/obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
 "ot" = (
@@ -740,6 +993,11 @@
 	},
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"oX" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "pk" = (
 /obj/structure/fluff/walldeco/vent/vent3{
 	pixel_y = 32
@@ -794,6 +1052,21 @@
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/closed/wall/mineral/rogue/scary/vertical,
 /area/rogue/under/cave/warmachine)
+"ql" = (
+/mob/living/simple_animal/hostile/rogue/robot/gunner/boss,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"qo" = (
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "qs" = (
 /obj/effect/decal/bodiesflipped,
 /turf/open/floor/rogue/warmetal,
@@ -806,6 +1079,11 @@
 /mob/living/simple_animal/hostile/rogue/robot,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"qK" = (
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/obj/structure/barbedwire,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "qQ" = (
 /obj/structure/spider/stickyweb/solo,
 /turf/open/floor/rogue/grime,
@@ -865,6 +1143,18 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"rA" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/structure/stairs/stone{
+	dir = 8;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"rF" = (
+/obj/effect/loretile/umamusume,
+/turf/closed/mineral/rogue,
+/area/rogue/under/cave/dungeon1)
 "rH" = (
 /obj/effect/decal/remains/corpse/body/body3{
 	plane = -6
@@ -876,11 +1166,20 @@
 /mob/living/simple_animal/hostile/rogue/robot/gunner/rifle,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"rN" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "rR" = (
 /obj/structure/mineral_door/wood/fancy,
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"su" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "sE" = (
 /obj/structure/mirror/square{
 	pixel_y = 39
@@ -892,6 +1191,9 @@
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"sH" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/dungeon1)
 "sN" = (
 /obj/effect/decal/bodiesflipped{
 	dir = 4
@@ -930,6 +1232,13 @@
 /obj/effect/spawner/lootdrop/general_loot_mid,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"ti" = (
+/turf/open/lava/acid,
+/area/rogue/under/cave/dungeon1)
+"tp" = (
+/obj/effect/spawner/lootdrop/ammo,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "tC" = (
 /obj/structure/chair/bench/comfycouch/r,
 /turf/open/floor/rogue/warmetal,
@@ -944,6 +1253,17 @@
 	},
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"tI" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
+"tL" = (
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/structure/bars/grille,
+/obj/effect/spawner/lootdrop/hightierguns,
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
 "tO" = (
 /turf/closed/wall/mineral/rogue/scary/end,
 /area/rogue/under/cave/warmachine)
@@ -967,6 +1287,11 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"up" = (
+/obj/effect/spawner/lootdrop/t13armor,
+/obj/structure/closet/crate/roguecloset/metal,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "ut" = (
 /obj/structure/mannequin/male{
 	dir = 2
@@ -976,6 +1301,11 @@
 /obj/item/clothing/suit/roguetown/armor/leather/mortician,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"uK" = (
+/obj/structure/closet/crate/drawer/filing/random,
+/obj/effect/spawner/lootdrop/ammo,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "uM" = (
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/closed/wall/mineral/rogue/scary/horizontal,
@@ -996,6 +1326,14 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
+"uZ" = (
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/structure/bars/grille,
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
 "va" = (
 /obj/effect/decal/remains/corpse/body/body3{
 	plane = -6
@@ -1004,13 +1342,42 @@
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"vk" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 10
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "vv" = (
 /turf/closed/wall/mineral/rogue/scary/end/east,
 /area/rogue/under/cave/warmachine)
+"vx" = (
+/obj/structure/table/wood/longreif{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/ammo,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"vG" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = sd
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "vH" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"vN" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "umastart"
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"wk" = (
+/mob/living/simple_animal/hostile/rogue/robot/gunner/shotgun,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "wy" = (
 /obj/effect/decal/cutting{
 	plane = -6;
@@ -1047,6 +1414,12 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"xc" = (
+/obj/structure/fluff/walldeco/spoiler2{
+	pixel_x = -29
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "xe" = (
 /obj/effect/decal/synth{
 	plane = -6;
@@ -1055,9 +1428,38 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"xf" = (
+/obj/structure/bars/grille,
+/obj/effect/spawner/lootdrop/hightierammo,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
 "xl" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"xs" = (
+/obj/structure/lever{
+	redstone_id = "umastart";
+	pixel_y = 12
+	},
+/obj/structure/table/wood/longreif{
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"xw" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border/east{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "xy" = (
 /obj/structure/fluff/walldeco/traumacon{
 	pixel_y = 0;
@@ -1091,6 +1493,15 @@
 	},
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"xY" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "xZ" = (
 /obj/effect/decal/remains/corpse/charred/charred2,
 /obj/effect/decal/remains/corpse/charred/charred3{
@@ -1107,21 +1518,56 @@
 /obj/effect/decal/cleanable/dirt/grime/grime2,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"yl" = (
+/obj/structure/table/wood/perserdunsmall/smallmetal2,
+/obj/effect/spawner/lootdrop/hightierguns,
+/obj/structure/fluff/walldeco/spoiler{
+	pixel_x = -28
+	},
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
 "yn" = (
 /obj/effect/decal/cleanable/dirt/grime/grime3,
 /mob/living/simple_animal/hostile/rogue/robot/gunner/rifle,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"yr" = (
+/obj/structure/bars/grille,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
 "yv" = (
 /obj/effect/decal/cleanable/dirt/grime/dust,
 /obj/effect/decal/cleanable/dirt/grime/dust,
 /mob/living/simple_animal/hostile/rogue/robot,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"yA" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/closed/wall/mineral/rogue/scary,
+/area/rogue/under/cave/dungeon1)
+"yF" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/closed/wall/mineral/rogue/scary/end/north,
+/area/rogue/under/cave/dungeon1)
+"yO" = (
+/obj/structure/closet/crate/roguecloset/metal/metal2,
+/obj/effect/spawner/lootdrop/ammo,
+/obj/effect/spawner/lootdrop/ammo,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "yR" = (
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/closed/wall/mineral/rogue/scary/end,
 /area/rogue/under/cave/warmachine)
+"zg" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/gethsmane,
+/obj/item/rogueweapon/pick,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "zh" = (
 /obj/effect/decal/cleanable/debris/stony,
 /obj/effect/decal/cleanable/debris/stony{
@@ -1131,6 +1577,20 @@
 /area/rogue/under/cave/warmachine)
 "zi" = (
 /obj/item/clothing/gloves/roguetown/leather/latex,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"zj" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"zk" = (
+/obj/structure/closet/crate/drawer/filing/random,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
 "zm" = (
@@ -1152,6 +1612,10 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"zs" = (
+/mob/living/simple_animal/hostile/rogue/robot,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "zt" = (
 /obj/structure/mannequin/male{
 	dir = 1
@@ -1161,6 +1625,10 @@
 /obj/item/clothing/suit/roguetown/armor/leather/mortician,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"zE" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "zN" = (
 /obj/structure/fluff/walldeco/computer/smallb,
 /turf/open/floor/rogue/warmetal,
@@ -1182,6 +1650,12 @@
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/closed/wall/mineral/rogue/scary/end/east,
 /area/rogue/under/cave/warmachine)
+"Ai" = (
+/obj/structure/closet/crate/roguecloset/metal,
+/obj/item/landmine,
+/obj/item/landmine,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Ao" = (
 /obj/effect/decal/bodies{
 	dir = 1
@@ -1189,6 +1663,10 @@
 /obj/effect/decal/remains/corpse/charred/charred2,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"Aq" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cave/dungeon1)
 "Av" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/rogue/warmetal,
@@ -1232,6 +1710,12 @@
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"Bi" = (
+/obj/structure/bars/passage/shutter{
+	redstone_id = "umaend"
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Bn" = (
 /obj/effect/decal/bodiesflipped{
 	dir = 8
@@ -1277,12 +1761,25 @@
 /obj/structure/mineral_door/wood/wardoor{
 	name = "MORGUE"
 	},
+/obj/effect/loretile/code3,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
 "Ci" = (
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"Cv" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/obj/structure/table/wood/metal3,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Cw" = (
+/obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/rogue/robot/gunner/shotgun,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "CC" = (
 /mob/living/simple_animal/hostile/rogue/robot,
 /turf/open/floor/rogue/grime,
@@ -1290,29 +1787,79 @@
 "CH" = (
 /turf/closed/wall/mineral/rogue/scary/vertical,
 /area/rogue/under/cave/dungeon1)
+"CL" = (
+/obj/effect/decal/bodiesflipped{
+	pixel_y = 1;
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "CR" = (
 /obj/effect/decal/cleanable/dirt/grime/dust,
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"CY" = (
+/obj/structure/chair/bench/church/smallbench,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Dc" = (
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "Df" = (
 /mob/living/simple_animal/hostile/rogue/robot/gunner/boss,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"Di" = (
+/obj/structure/fluff/walldeco/kingofnil{
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Dm" = (
 /obj/effect/decal/bodiesflipped{
 	dir = 8
 	},
 /turf/open/water/bloody,
 /area/rogue/under/cave/warmachine)
+"Dy" = (
+/obj/structure/table/wood/longreif{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"DB" = (
+/obj/structure/chair/stool/rogue,
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "DM" = (
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/closed/wall/mineral/rogue/scary/end/east,
 /area/rogue/under/cave/warmachine)
+"DQ" = (
+/obj/structure/closet/crate/drawer/filing/random,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "DV" = (
 /obj/structure/fluff/walldeco/computer/largeb,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"DW" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Eb" = (
 /turf/closed/wall/mineral/rogue/scary/end/north,
 /area/rogue/under/cave/warmachine)
@@ -1334,6 +1881,10 @@
 	},
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"En" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Er" = (
 /obj/effect/loretile/apartments,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -1341,6 +1892,34 @@
 "Ev" = (
 /obj/effect/decal/remains/corpse/body/body3,
 /turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"EB" = (
+/obj/effect/decal/polishing{
+	pixel_y = 13;
+	density = 0
+	},
+/obj/structure/fluff/walldeco/vent/vent3{
+	pixel_y = 32
+	},
+/mob/living/simple_animal/hostile/rogue/robot/gunner,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"ED" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/gethsmane,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
+"EP" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"EQ" = (
+/obj/structure/bars/grille,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/effect/spawner/lootdrop/hightierguns,
+/turf/open/floor/rogue/redlight,
 /area/rogue/under/cave/dungeon1)
 "EV" = (
 /mob/living/simple_animal/hostile/rogue/robot/gunner/rifle,
@@ -1365,6 +1944,13 @@
 /obj/structure/fluff/medcurtain,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"FA" = (
+/obj/structure/table/wood/perserdunsmall/smallmetal2,
+/obj/item/sandbag,
+/obj/item/sandbag,
+/obj/item/sandbag,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "FG" = (
 /obj/structure/table/optable,
 /obj/effect/decal/remains/corpse/body/body3{
@@ -1399,9 +1985,40 @@
 	},
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"Gu" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/obj/structure/pressure_plate{
+	desc = "Reach for first place.";
+	name = "FINISH LINE";
+	redstone_id = "umaend"
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "GO" = (
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"GQ" = (
+/obj/structure/chair/stool/rogue,
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"GZ" = (
+/obj/structure/closet/crate/drawer/filing/random,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Hb" = (
+/obj/effect/decal/loader{
+	dir = 4;
+	plane = -6
+	},
+/turf/closed/wall/mineral/rogue/scary,
 /area/rogue/under/cave/dungeon1)
 "He" = (
 /obj/structure/mineral_door/wood/fancy,
@@ -1413,6 +2030,25 @@
 	},
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"HM" = (
+/mob/living/simple_animal/hostile/rogue/robot/gunner,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"HW" = (
+/obj/structure/closet/crate/roguecloset/metal{
+	pixel_x = -7
+	},
+/obj/structure/closet/crate/roguecloset/metal{
+	pixel_x = 11
+	},
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Im" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Ir" = (
 /obj/effect/decal/polishing{
 	pixel_y = 13;
@@ -1438,6 +2074,18 @@
 /mob/living/simple_animal/hostile/rogue/robot/gunner/shotgun,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"IF" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 1
+	},
+/turf/open/lava/acid,
+/area/rogue/under/cave/dungeon1)
+"IH" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 9
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "IK" = (
 /obj/effect/decal/cleanable/dirt/grime/grime2,
 /obj/effect/decal/cleanable/dirt/grime/grime2,
@@ -1451,6 +2099,30 @@
 /obj/item/storage/belt/rogue/surgery_bag/full,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
+"IU" = (
+/obj/structure/fluff/railing/sandbag{
+	dir = 4
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"IV" = (
+/obj/structure/bars/grille,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/effect/spawner/lootdrop/normalguns,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
+"IW" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = sd
+	},
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Ja" = (
 /obj/effect/spawner/lootdrop/ammo,
 /obj/effect/spawner/lootdrop/ammo,
@@ -1461,6 +2133,16 @@
 /obj/effect/decal/cleanable/dirt/grime/grime2,
 /turf/closed/wall/mineral/rogue/scary/end/east,
 /area/rogue/under/cave/warmachine)
+"Je" = (
+/obj/structure/closet/crate/drawer/filing/random,
+/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor/pauldrons,
+/obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet/visored,
+/obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
+/obj/item/clothing/gloves/roguetown/leather/ebgloves,
+/obj/item/clothing/shoes/roguetown/armor/ebboots/armored,
+/obj/item/clothing/shoes/roguetown/armor/ebboots/armored,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Jf" = (
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
@@ -1487,11 +2169,26 @@
 /obj/effect/decal/cleanable/dirt/grime/grime3,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Jv" = (
+/obj/structure/table/wood/longreif{
+	dir = 4
+	},
+/obj/item/flashlight/flare/torch/lantern/tablelamp/prelit{
+	light_outer_range = 2;
+	pixel_x = 4;
+	pixel_y = 14
+	},
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "JK" = (
 /obj/structure/table/wood/perserdunsmall/smallmetal2,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"JR" = (
+/turf/closed/mineral/rogue,
+/area/rogue/under/cave/dungeon1)
 "Ka" = (
 /obj/structure/fluff/railing/sandbag{
 	dir = 4
@@ -1518,6 +2215,15 @@
 /obj/effect/spawner/lootdrop/ammo,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"Kh" = (
+/obj/structure/mineral_door/wood/wardoor,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Kj" = (
+/obj/effect/decal/remains/corpse/charred/charred6,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Kl" = (
 /obj/structure/chair/wood/rogue/generic1{
 	dir = 4
@@ -1559,6 +2265,16 @@
 	},
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"KX" = (
+/obj/structure/closet/crate/roguecloset/metal{
+	pixel_x = -7
+	},
+/obj/structure/closet/crate/roguecloset/metal{
+	pixel_x = 11
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Le" = (
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/grime,
@@ -1568,6 +2284,12 @@
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"Lt" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Lw" = (
 /obj/structure/mineral_door/wood/fancy,
 /turf/open/floor/carpet/royalblack,
@@ -1647,6 +2369,16 @@
 "MD" = (
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"ME" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 6
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"MP" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "MT" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/warmachine)
@@ -1654,6 +2386,10 @@
 /obj/effect/decal/cleanable/dirt/grime,
 /turf/closed/wall/mineral/rogue/scary/horizontal,
 /area/rogue/under/cave/warmachine)
+"Na" = (
+/obj/structure/barbedwire,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Ne" = (
 /obj/effect/decal/bodiesflipped{
 	dir = 1
@@ -1666,6 +2402,12 @@
 /obj/structure/fluff/walldeco/computer/smallb,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Nj" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 1
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Nm" = (
 /obj/structure/fluff/walldeco/vent/vent3{
 	pixel_y = 32
@@ -1681,6 +2423,10 @@
 /obj/item/clothing/suit/roguetown/armor/leather/mortician,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Nx" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/closed/wall/mineral/rogue/scary/end,
+/area/rogue/under/cave/dungeon1)
 "Nz" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/floor/rogue/warmetal,
@@ -1692,6 +2438,17 @@
 /obj/effect/spawner/lootdrop/general_loot_low,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"NP" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/obj/structure/barbedwire,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"NQ" = (
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 8
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Oc" = (
 /obj/effect/decal/bodies{
 	dir = 2
@@ -1702,11 +2459,23 @@
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"Os" = (
+/obj/effect/decal/loader{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Ou" = (
 /obj/structure/bed/rogue,
 /obj/item/bedsheet/rogue/fabric,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"Ov" = (
+/obj/structure/mineral_door/wood/wardoor,
+/obj/effect/loretile/factory,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "OA" = (
 /obj/structure/table/wood/longreif,
 /obj/effect/spawner/lootdrop/normalguns,
@@ -1716,6 +2485,22 @@
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/closed/wall/mineral/rogue/scary/vertical,
 /area/rogue/under/cave/warmachine)
+"ON" = (
+/obj/effect/decal/carpet/kover_black{
+	dir = 1;
+	pixel_y = 6
+	},
+/obj/structure/mannequin/male{
+	layer = 5;
+	dir = 1
+	},
+/obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
+/obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
+/obj/item/clothing/gloves/roguetown/leather/ebgloves,
+/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "OQ" = (
 /obj/structure/closet/crate/roguecloset/metal/metal2{
 	plane = -5
@@ -1734,8 +2519,20 @@
 /obj/item/clothing/suit/roguetown/armor/leather/mortician,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Pi" = (
+/obj/effect/spawner/lootdrop/t13armor,
+/obj/effect/decal/remains/corpse/body,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
+"Pm" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Pp" = (
 /turf/closed/wall/mineral/rogue/scary/end/east,
+/area/rogue/under/cave/dungeon1)
+"Px" = (
+/turf/open/floor/rogue/shroud,
 /area/rogue/under/cave/dungeon1)
 "Pz" = (
 /obj/structure/table/wood/longreif{
@@ -1748,6 +2545,26 @@
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"PD" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"PJ" = (
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"PK" = (
+/obj/effect/decal/bodiesflipped{
+	pixel_y = 1;
+	dir = 8
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"PM" = (
+/obj/effect/decal/remains/corpse/body,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "PU" = (
 /obj/structure/mineral_door/wood/fancy,
 /turf/open/floor/rogue/med,
@@ -1767,6 +2584,21 @@
 "Qs" = (
 /turf/closed/wall/mineral/rogue/scary,
 /area/rogue/under/cave/warmachine)
+"Qv" = (
+/obj/structure/table/wood/longreif{
+	dir = 2
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"QC" = (
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/structure/bars/grille,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/redlight,
+/area/rogue/under/cave/dungeon1)
 "QF" = (
 /obj/structure/bars/passage/shutter{
 	redstone_id = "hospital"
@@ -1779,6 +2611,27 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"QO" = (
+/obj/effect/decal/carpet/kover_black{
+	dir = 8;
+	pixel_y = 16;
+	pixel_x = -6
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"QQ" = (
+/obj/structure/table/wood/perserdunsmall/smallmetal2,
+/obj/structure/fluff/walldeco/computer/smallb,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Rk" = (
+/obj/effect/decal/bodies,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Rm" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+/turf/open/floor/rogue/shroud,
+/area/rogue/under/cave/dungeon1)
 "Ro" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
 /turf/open/floor/rogue/warmetal,
@@ -1838,10 +2691,22 @@
 /obj/structure/fluff/medcurtain,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
+"Se" = (
+/obj/structure/pressure_plate{
+	desc = "Reach for first place.";
+	name = "FINISH LINE";
+	redstone_id = "umaend"
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Sf" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"Sh" = (
+/obj/effect/decal/cleanable/dirt/grime,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "Sn" = (
 /obj/effect/decal/bodies{
 	dir = 1
@@ -1869,6 +2734,12 @@
 "SZ" = (
 /turf/closed/wall/mineral/rogue/scary/horizontal,
 /area/rogue/under/cave/dungeon1)
+"Ta" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 2
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Tk" = (
 /obj/structure/closet/crate/roguecloset/metal,
 /obj/effect/spawner/lootdrop/general_loot_mid,
@@ -1884,6 +2755,12 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/warmachine)
+"Tq" = (
+/obj/effect/decal/bodies{
+	dir = 4
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Tw" = (
 /obj/item/storage/belt/rogue/pouch/pillbottle,
 /turf/open/floor/rogue/grime,
@@ -1908,6 +2785,24 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"Un" = (
+/obj/effect/decal/polishing{
+	pixel_y = 13;
+	density = 0
+	},
+/obj/structure/fluff/walldeco/vent/vent3{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Ur" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Ux" = (
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Uy" = (
 /obj/effect/decal/bodies{
 	dir = 1
@@ -1994,6 +2889,13 @@
 "VC" = (
 /turf/closed/wall/mineral/rogue/scary/end/west,
 /area/rogue/under/cave/warmachine)
+"VJ" = (
+/obj/structure/fluff/walldeco/vent/vent3{
+	dir = 4;
+	pixel_x = -31
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "VK" = (
 /obj/effect/decal/cleanable/dirt/grime,
 /obj/effect/decal/cleanable/dirt/grime/grime4,
@@ -2012,10 +2914,32 @@
 	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"VZ" = (
+/obj/structure/mineral_door/wood/wardoor,
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Wh" = (
+/obj/effect/decal/bodies{
+	dir = 1
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Wi" = (
 /obj/structure/fluff/medstand,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Wj" = (
+/obj/effect/decal/cleanable/debris/stony,
+/obj/effect/decal/cleanable/debris/stony{
+	dir = 4
+	},
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Wk" = (
+/obj/effect/decal/cleanable/dirt/grime/grime4,
+/turf/closed/wall/mineral/rogue/scary,
+/area/rogue/under/cave/dungeon1)
 "Wn" = (
 /obj/effect/decal/remains/corpse/body,
 /turf/open/floor/rogue/warmetal,
@@ -2027,6 +2951,10 @@
 	},
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Wu" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/dungeon1)
 "WA" = (
 /obj/structure/chair/wood/rogue/generic1{
 	dir = 2
@@ -2055,6 +2983,27 @@
 	},
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"Xe" = (
+/obj/structure/table/wood/perserdunsmall/smallmetal2,
+/obj/item/barbedwire,
+/obj/item/barbedwire,
+/obj/item/barbedwire,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Xf" = (
+/obj/structure/chair/stool/rogue,
+/obj/structure/mannequin/male{
+	layer = 5;
+	dir = 2
+	},
+/obj/item/clothing/mask/rogue/gasmask/eb_gasmask,
+/obj/item/clothing/head/roguetown/helmet/heavy/ebhelmet,
+/obj/item/clothing/shoes/roguetown/armor/ebboots/wrapped,
+/obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor,
+/obj/item/clothing/gloves/roguetown/leather/ebgloves,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Xg" = (
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/dungeon1)
@@ -2069,6 +3018,17 @@
 /area/rogue/under/cave/warmachine)
 "Xr" = (
 /obj/structure/closet/crate/drawer/filing/alt3,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Xu" = (
+/obj/effect/decal/cleanable/dirt/grime/grime3,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"XB" = (
+/obj/effect/decal/remains/corpse/oldbody{
+	pixel_y = 22;
+	plane = -6
+	},
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/dungeon1)
 "XF" = (
@@ -2130,14 +3090,37 @@
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"YG" = (
+/obj/structure/table/wood/perserdunsmall/smallmetal3,
+/obj/structure/bars/shop,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"YM" = (
+/obj/structure/fluff/railing/border/east{
+	dir = 8
+	},
+/obj/structure/table/wood/metal2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "YQ" = (
 /obj/effect/decal/remains/corpse/charred/charred6,
 /turf/open/floor/rogue/warmetal,
 /area/rogue/under/cave/warmachine)
+"YS" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/dungeon1)
 "Ze" = (
 /obj/structure/mineral_door/wood/wardoor,
 /turf/open/floor/rogue/grime,
 /area/rogue/under/cave/warmachine)
+"Zg" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/dirt/grime/grime2,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 "Zn" = (
 /obj/structure/fluff/walldeco/vent/vent3{
 	pixel_y = 30
@@ -2146,6 +3129,14 @@
 /area/rogue/under/cave/warmachine)
 "Zu" = (
 /turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
+"Zv" = (
+/obj/structure/bars/grille,
+/obj/structure/closet/crate/roguecloset/metal/metal2{
+	plane = -5
+	},
+/obj/effect/spawner/lootdrop/normalguns,
+/turf/open/floor/rogue/redlight,
 /area/rogue/under/cave/dungeon1)
 "ZE" = (
 /obj/structure/mirror/square{
@@ -2164,6 +3155,10 @@
 /obj/structure/barbedwire,
 /turf/open/floor/rogue/med,
 /area/rogue/under/cave/warmachine)
+"ZW" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/direbear,
+/turf/open/floor/rogue/warmetal,
+/area/rogue/under/cave/dungeon1)
 
 (1,1,1) = {"
 FI
@@ -3594,9 +4589,9 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
+TF
+TF
+TF
 FI
 FI
 FI
@@ -3821,9 +4816,9 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
+TF
+yl
+TF
 FI
 FI
 FI
@@ -4048,9 +5043,9 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
+Wk
+Zu
+TF
 FI
 FI
 FI
@@ -4274,25 +5269,25 @@ FI
 FI
 FI
 FI
+TF
+TF
+Bi
+TF
+Wk
+TF
+TF
+TF
+TF
+TF
+TF
+TF
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+tI
+TF
+TF
+tI
+tI
 FI
 FI
 FI
@@ -4500,27 +5495,27 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+sH
+sH
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+sH
+sH
+Zu
+Zu
+sH
+sH
+tI
 FI
 FI
 FI
@@ -4726,28 +5721,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+tI
+Zu
+sH
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -4953,28 +5948,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+Wk
+Zu
+Zu
+ME
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+je
+aE
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -5180,28 +6175,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -5407,28 +6402,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -5634,28 +6629,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+hJ
+Zu
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -5861,28 +6856,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -6088,28 +7083,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -6315,28 +7310,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+tI
+sH
+Ta
+ti
+ti
+ti
+ti
+ti
+bi
+YM
+Cv
+IF
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -6542,28 +7537,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+sH
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+bi
+Ur
+DB
+IF
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -6769,28 +7764,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+tI
+Zu
+Ta
+ti
+ti
+ti
+ti
+ti
+bi
+Xu
+PD
+IF
+ti
+ti
+ti
+ti
+ti
+Nj
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -6996,28 +7991,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+vk
+Lt
+Lt
+Lt
+Lt
+lN
+xw
+Xu
+xs
+GQ
+IW
+Gu
+Lt
+Lt
+Lt
+IH
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -7223,28 +8218,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+Wk
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+vN
+zj
+tI
+kB
+Xu
+vG
+Se
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -7450,28 +8445,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+Zu
+vN
+xY
+tI
+tI
+tI
+vG
+Se
+Zu
+Zu
+sH
+sH
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -7677,28 +8672,28 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+hJ
+TF
+TF
+TF
+hJ
+TF
+TF
+TF
+rF
+TF
+TF
+TF
+TF
+TF
+tI
+tI
+tI
+TF
+TF
 FI
 FI
 FI
@@ -7913,11 +8908,11 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
+TF
+JR
+JR
+JR
+TF
 FI
 FI
 FI
@@ -8140,11 +9135,11 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
+TF
+JR
+JR
+JR
+TF
 FI
 FI
 FI
@@ -8358,19 +9353,19 @@ FI
 FI
 FI
 FI
+TF
+TF
+TF
+TF
+TF
+TF
+TF
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+JR
+JR
+JR
 FI
 FI
 FI
@@ -8585,6 +9580,19 @@ FI
 FI
 FI
 FI
+TF
+Je
+IV
+Zv
+IV
+Je
+TF
+FI
+FI
+TF
+JR
+JR
+JR
 FI
 FI
 FI
@@ -8603,27 +9611,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
 FI
 FI
 FI
@@ -8812,6 +9807,20 @@ FI
 FI
 FI
 FI
+TF
+Zu
+Zu
+Zu
+Zu
+Zu
+TF
+FI
+FI
+FI
+JR
+JR
+JR
+TF
 FI
 FI
 FI
@@ -8829,28 +9838,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+uZ
+Zu
+tL
+xc
+QC
+Zu
+TF
 FI
 FI
 FI
@@ -9039,6 +10034,20 @@ FI
 FI
 FI
 FI
+TF
+Zu
+Zu
+Zu
+Ux
+Ux
+TF
+FI
+FI
+TF
+JR
+JR
+JR
+TF
 FI
 FI
 FI
@@ -9056,28 +10065,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+xf
+Zu
+yr
+ql
+EQ
+Zu
+TF
 FI
 FI
 FI
@@ -9266,6 +10261,20 @@ FI
 FI
 FI
 FI
+TF
+TF
+TF
+GO
+TF
+TF
+TF
+FI
+FI
+TF
+JR
+JR
+JR
+TF
 FI
 FI
 FI
@@ -9283,28 +10292,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+xf
+Zu
+Zv
+Zu
+Zv
+Zu
+TF
 FI
 FI
 FI
@@ -9493,6 +10488,19 @@ FI
 FI
 FI
 FI
+Hb
+Xj
+Ux
+Zu
+Ux
+sH
+TF
+FI
+FI
+FI
+JR
+JR
+JR
 FI
 FI
 FI
@@ -9511,27 +10519,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+ql
+Zu
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -9720,6 +10715,19 @@ FI
 FI
 FI
 FI
+id
+aJ
+Zu
+Zu
+Zu
+tI
+TF
+FI
+FI
+FI
+JR
+YS
+JR
 FI
 FI
 FI
@@ -9738,27 +10746,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+cU
+Zu
+Zu
+Zu
+Zu
+cU
+TF
 FI
 FI
 FI
@@ -9947,6 +10942,28 @@ FI
 FI
 FI
 FI
+TF
+MP
+Zu
+tI
+Zu
+Zu
+TF
+TF
+TF
+TF
+tI
+qo
+tI
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
 FI
 FI
 FI
@@ -9956,36 +10973,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+GO
+GO
+TF
+TF
+TF
 FI
 FI
 FI
@@ -10174,6 +11169,28 @@ FI
 FI
 FI
 FI
+tI
+Zu
+tI
+Zu
+Zu
+Ux
+GO
+Zu
+Ux
+Zu
+lr
+qo
+am
+Zu
+hR
+Wh
+cO
+np
+Zu
+Zu
+Ux
+TF
 FI
 FI
 FI
@@ -10185,32 +11202,10 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -10401,6 +11396,28 @@ FI
 FI
 FI
 FI
+Wu
+Zu
+Zu
+su
+Zu
+Zu
+GO
+Zu
+Pm
+Zu
+nn
+Pm
+Zu
+Pm
+Zu
+Zu
+Ux
+hS
+Rk
+CL
+Zu
+TF
 FI
 FI
 FI
@@ -10412,32 +11429,10 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -10628,6 +11623,28 @@ FI
 FI
 FI
 FI
+Px
+sH
+Zu
+Zu
+Zu
+Zu
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+GO
+GO
+TF
+TF
+TF
+TF
+TF
 FI
 FI
 FI
@@ -10639,32 +11656,10 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -10854,6 +11849,25 @@ FI
 FI
 FI
 FI
+sH
+sH
+tI
+Ux
+sH
+Zu
+MP
+TF
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+TF
+Ux
+Zu
+TF
 FI
 FI
 FI
@@ -10867,31 +11881,12 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+JR
+JR
+TF
+jr
+Zu
+TF
 FI
 FI
 FI
@@ -11080,6 +12075,26 @@ FI
 FI
 FI
 FI
+sH
+sH
+tI
+ZW
+Zu
+Zu
+Zu
+Zu
+TF
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+TF
+Zu
+PM
+TF
 FI
 FI
 FI
@@ -11092,33 +12107,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+JR
+JR
+JR
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -11307,6 +12302,26 @@ FI
 FI
 FI
 FI
+sH
+Px
+tI
+tI
+sH
+Rm
+sH
+TF
+TF
+FI
+FI
+FI
+FI
+FI
+FI
+FI
+TF
+Zu
+le
+TF
 FI
 FI
 FI
@@ -11316,36 +12331,16 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+JR
+JR
+JR
+JR
+JR
+JR
+TF
+kL
+Zu
+TF
 FI
 FI
 FI
@@ -11535,6 +12530,9 @@ FI
 FI
 FI
 FI
+sH
+sH
+Px
 FI
 FI
 FI
@@ -11547,6 +12545,10 @@ FI
 FI
 FI
 FI
+TF
+gs
+Zu
+TF
 FI
 FI
 FI
@@ -11556,23 +12558,16 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+JR
+JR
+JR
+JR
+JR
+TF
+Zu
+jr
+TF
 FI
 FI
 FI
@@ -11763,6 +12758,7 @@ FI
 FI
 FI
 FI
+sH
 FI
 FI
 FI
@@ -11776,6 +12772,10 @@ FI
 FI
 FI
 FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -11784,22 +12784,17 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+zg
+JR
+JR
+JR
+JR
+Dc
+Sh
+NQ
+Zu
+TF
 FI
 FI
 FI
@@ -11994,6 +12989,20 @@ FI
 FI
 FI
 FI
+TF
+yA
+TF
+TF
+TF
+TF
+FI
+FI
+FI
+FI
+TF
+Pm
+Ux
+TF
 FI
 FI
 FI
@@ -12001,32 +13010,18 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+nt
+tI
+JR
+JR
+JR
+JR
+Dc
+Wj
+hm
+Zu
+TF
 FI
 FI
 FI
@@ -12221,6 +13216,20 @@ FI
 FI
 FI
 FI
+TF
+Ai
+Xe
+FA
+up
+TF
+TF
+TF
+TF
+TF
+TF
+Ux
+EP
+TF
 FI
 FI
 FI
@@ -12228,32 +13237,18 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tp
+Pi
+ED
+JR
+JR
+JR
+JR
+Dc
+am
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -12448,39 +13443,39 @@ FI
 FI
 FI
 FI
+TF
+wO
+Ux
+Zu
+Zu
+GO
+oX
+Zg
+zE
+nn
+En
+Ux
+Zu
+TF
 FI
 FI
 FI
+Aq
 FI
 FI
+Aq
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tI
+tI
+JR
+JR
+JR
+JR
+JR
+TF
+GO
+GO
+TF
 FI
 FI
 FI
@@ -12675,6 +13670,20 @@ FI
 FI
 FI
 FI
+TF
+zm
+Ux
+Cw
+Ux
+GO
+gs
+Di
+Ev
+Pm
+zs
+Ux
+hS
+TF
 FI
 FI
 FI
@@ -12686,28 +13695,14 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+JR
+JR
+JR
+JR
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -12902,6 +13897,20 @@ FI
 FI
 FI
 FI
+TF
+wO
+Zu
+gs
+Zu
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
 FI
 FI
 FI
@@ -12914,27 +13923,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+JR
+JR
+JR
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -13129,6 +14124,12 @@ FI
 FI
 FI
 FI
+TF
+fv
+Ux
+Zu
+Kj
+yA
 FI
 FI
 FI
@@ -13138,30 +14139,24 @@ FI
 FI
 FI
 FI
+hO
+CH
+aF
+CH
+CH
+aF
+CH
+pJ
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+JR
+JR
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -13356,6 +14351,13 @@ FI
 FI
 FI
 FI
+TF
+TF
+Kh
+GO
+TF
+TF
+TF
 FI
 FI
 FI
@@ -13364,31 +14366,24 @@ FI
 FI
 FI
 FI
+hs
+Un
+Ux
+rA
+hd
+eu
+gs
+hs
 FI
 FI
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+wk
+TF
 FI
 FI
 FI
@@ -13582,40 +14577,40 @@ FI
 FI
 FI
 FI
+yA
+KX
+CY
+Zu
+Zu
+eU
+af
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+FI
+SZ
+zm
+Zu
+Xu
+Im
+PJ
+Zu
+SZ
 FI
 FI
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -13809,40 +14804,40 @@ FI
 FI
 FI
 FI
+TF
+HW
+eU
+Zu
+Zu
+eU
+HW
+TF
+zk
+uK
+zk
+zk
+uK
+zk
+TF
+FI
+SZ
+fv
+Zu
+PJ
+PJ
+Xu
+Xu
+SZ
 FI
 FI
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -14036,40 +15031,40 @@ FI
 FI
 FI
 FI
+TF
+af
+eU
+En
+Ux
+Zu
+Ux
+GO
+Ux
+wk
+Zu
+Eh
+Zu
+Zu
+TF
+FI
+SZ
+wO
+PJ
+PJ
+Zu
+Zu
+Xu
+SZ
 FI
 FI
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+yA
+Ux
+Zu
+yA
 FI
 FI
 FI
@@ -14263,40 +15258,40 @@ FI
 FI
 FI
 FI
+TF
+HW
+eU
+Rk
+lk
+DW
+KX
+TF
+uK
+Zu
+uK
+zk
+zk
+uK
+TF
+FI
+Pp
+zm
+qK
+IU
+IU
+NP
+Ux
+Pp
 FI
 FI
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -14490,40 +15485,40 @@ FI
 FI
 FI
 FI
+TF
+TF
+TF
+TF
+TF
+GO
+TF
+TF
+TF
+GO
+yA
+TF
+TF
+TF
+TF
+TF
+hO
+Nx
+TF
+Ov
+gY
+TF
+yF
+CH
 FI
 FI
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+nn
+Zu
+TF
 FI
 FI
 FI
@@ -14720,37 +15715,37 @@ FI
 FI
 FI
 FI
+TF
+PK
+Zu
+kv
+VJ
+eX
+Zu
+Ux
+TF
 FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+EB
+Zu
+PD
+QO
+gC
+oq
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -14943,41 +15938,41 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+TF
+TF
+PD
+Ur
+oe
+Xf
+oe
+Zu
+Zu
+TF
+TF
+TF
+Wk
+TF
+TF
+zm
+Zu
+PD
+Zu
+PD
+Zu
+GO
+Zu
+Zu
+nn
+Zu
+hR
+Wh
+PK
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -15170,41 +16165,41 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+yO
+PD
+Ux
+TF
+Zu
+nn
+Dy
+Zu
+eO
+PJ
+PJ
+TF
+Zu
+VJ
+Zu
+Zu
+TF
+Na
+PD
+PD
+Zu
+Zu
+Ux
+GO
+Zu
+Tq
+Rk
+lk
+Zu
+Zu
+Zu
+Zu
+Ux
+TF
 FI
 FI
 FI
@@ -15397,41 +16392,41 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+lb
+Wn
+wk
+GO
+Ux
+Ux
+Ux
+Zu
+Zu
+Zu
+PJ
+VZ
+Zu
+Zu
+Wn
+Zu
+GO
+Zu
+HM
+Zu
+Zu
+Zu
+Zu
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+yA
+TF
+TF
 FI
 FI
 FI
@@ -15624,31 +16619,31 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+yO
+Zu
+PD
+TF
+Zu
+Zu
+Qv
+nn
+kv
+Zu
+Zu
+TF
+Eh
+Zu
+Zu
+Zu
+TF
+XB
+Zu
+Zu
+Zu
+Zu
+HM
+hJ
 FI
 FI
 FI
@@ -15851,31 +16846,31 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+TF
+Hb
+Xj
+Ur
+oe
+ea
+oe
+PJ
+PJ
+GO
+PJ
+Zu
+Ev
+Zu
+GO
+Zu
+Ux
+Zu
+HM
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -16082,27 +17077,27 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+id
+Os
+PD
+vx
+Zu
+Jv
+Zu
+Zu
+TF
+Zu
+PD
+Zu
+Zu
+hJ
+Na
+Zu
+PD
+Zu
+Zu
+oq
+TF
 FI
 FI
 FI
@@ -16309,27 +17304,27 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+YG
+YG
+YG
+GO
+TF
+Un
+HM
+Zu
+Zu
+Zu
+gC
+hJ
 FI
 FI
 FI
@@ -16544,19 +17539,19 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+hJ
+QQ
+fJ
+Zu
+Zu
+TF
+zm
+rN
+aq
+rN
+aq
+Zu
+hJ
 FI
 FI
 FI
@@ -16763,27 +17758,27 @@ FI
 FI
 FI
 FI
+cU
+UE
+zi
+rm
+rm
+Wn
+Zu
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+GZ
+Zu
+PD
+Zu
+TF
+TF
+TF
+TF
+TF
+TF
+TF
+TF
 FI
 FI
 FI
@@ -16990,20 +17985,20 @@ FI
 FI
 FI
 FI
+ZE
+iD
+Kr
+rm
+rm
+Eh
+Zu
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+DQ
+ON
+Zu
+Zu
+TF
 FI
 FI
 FI
@@ -17217,20 +18212,20 @@ FI
 FI
 FI
 FI
+GO
+cX
+kT
+Tw
+Xg
+Ev
+Zu
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+GZ
+PD
+PD
+iK
+TF
 FI
 FI
 FI
@@ -17444,20 +18439,20 @@ FI
 FI
 FI
 FI
+WA
+Sc
+Zu
+Xg
+Xg
+Bc
+Zu
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+TF
+TF
+TF
+TF
+TF
+TF
 FI
 FI
 FI
@@ -17671,13 +18666,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+zN
+IQ
+Zu
+AD
+Zu
+Zu
+Zu
 FI
 FI
 FI
@@ -17898,13 +18893,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+kB
+na
+Zu
+BZ
+hO
+Zu
+Zu
 FI
 FI
 FI
@@ -18125,13 +19120,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tF
+fC
+Mc
+TF
+pJ
+uW
+Xj
 FI
 FI
 FI
@@ -18352,13 +19347,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+PY
+Mo
+iA
+SZ
+CH
+LS
+aJ
 FI
 FI
 FI
@@ -18579,13 +19574,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+wO
+He
+tC
+hs
+Pp
+Zu
+Zu
 FI
 FI
 FI
@@ -18806,13 +19801,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+zm
+mA
+VM
+Zu
+br
+Zu
+Zu
 FI
 FI
 FI
@@ -19033,13 +20028,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+kc
+nY
+cC
+Zu
+TT
+Zu
+Zu
 FI
 FI
 FI
@@ -19260,13 +20255,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+Zu
+UQ
+Xr
+Zu
+eA
+Zu
+Zu
 FI
 FI
 FI
@@ -21096,13 +22091,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+cU
+UE
+zi
+rm
+rm
+Wn
+Zu
 FI
 FI
 FI
@@ -21323,13 +22318,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+ZE
+iD
+Kr
+rm
+rm
+Eh
+Zu
 FI
 FI
 FI
@@ -21550,13 +22545,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+GO
+cX
+kT
+Tw
+Xg
+Ev
+Zu
 FI
 FI
 FI
@@ -21777,13 +22772,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+WA
+Sc
+Zu
+Xg
+Xg
+Bc
+Zu
 FI
 FI
 FI
@@ -22004,13 +22999,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+zN
+IQ
+Zu
+AD
+Zu
+Zu
+Zu
 FI
 FI
 FI
@@ -22231,13 +23226,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+kB
+na
+Zu
+BZ
+hO
+Zu
+Zu
 FI
 FI
 FI
@@ -22458,13 +23453,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+tF
+fC
+Mc
+TF
+pJ
+uW
+Xj
 FI
 FI
 FI
@@ -22685,13 +23680,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+PY
+Mo
+iA
+SZ
+CH
+LS
+aJ
 FI
 FI
 FI
@@ -22912,13 +23907,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+wO
+He
+tC
+hs
+Pp
+Zu
+Zu
 FI
 FI
 FI
@@ -23139,13 +24134,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+zm
+mA
+VM
+Zu
+br
+Zu
+Zu
 FI
 FI
 FI
@@ -23366,13 +24361,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+kc
+nY
+cC
+Zu
+TT
+Zu
+Zu
 FI
 FI
 FI
@@ -23593,13 +24588,13 @@ FI
 FI
 FI
 FI
-FI
-FI
-FI
-FI
-FI
-FI
-FI
+Zu
+UQ
+Xr
+Zu
+eA
+Zu
+Zu
 FI
 FI
 FI
@@ -34190,7 +35185,7 @@ ot
 ot
 vv
 Qs
-jc
+dY
 Qs
 wJ
 FI
@@ -36261,13 +37256,13 @@ tO
 VC
 FI
 FI
-cU
-UE
-zi
-rm
-rm
-Wn
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -36488,13 +37483,13 @@ LR
 wJ
 FI
 FI
-ZE
-iD
-Kr
-rm
-rm
-Eh
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -36715,13 +37710,13 @@ BP
 wJ
 FI
 FI
-GO
-cX
-kT
-Tw
-Xg
-Ev
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -36942,13 +37937,13 @@ Jf
 wJ
 FI
 FI
-WA
-Sc
-Zu
-Xg
-Xg
-Bc
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -37169,13 +38164,13 @@ Jp
 wJ
 FI
 FI
-zN
-IQ
-Zu
-AD
-Zu
-Zu
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -37396,13 +38391,13 @@ Qs
 ai
 FI
 FI
-kB
-na
-Zu
-BZ
-hO
-Zu
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -37623,13 +38618,13 @@ dt
 wJ
 FI
 FI
-tF
-fC
-Mc
-TF
-pJ
-uW
-Xj
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -37850,13 +38845,13 @@ dt
 wJ
 FI
 FI
-PY
-Mo
-iA
-SZ
-CH
-LS
-aJ
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -38077,13 +39072,13 @@ Qs
 wJ
 FI
 FI
-wO
-He
-tC
-hs
-Pp
-Zu
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -38304,13 +39299,13 @@ Jf
 wJ
 FI
 FI
-zm
-mA
-VM
-Zu
-br
-Zu
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -38531,13 +39526,13 @@ Jf
 wJ
 FI
 FI
-kc
-nY
-cC
-Zu
-TT
-Zu
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
@@ -38758,13 +39753,13 @@ Jf
 wJ
 FI
 FI
-Zu
-UQ
-Xr
-Zu
-eA
-Zu
-Zu
+FI
+FI
+FI
+FI
+FI
+FI
+FI
 FI
 FI
 FI
