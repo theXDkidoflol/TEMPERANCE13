@@ -98,8 +98,8 @@
 	return nutrition_amount
 
 /mob/living/stamina_add(added as num, emote_override, force_emote = TRUE) //call update_stamina here and set last_fatigued, return false when not enough fatigue left
-	if(HAS_TRAIT(src, TRAIT_INFINITE_STAMINA))
-		return TRUE
+//	if(HAS_TRAIT(src, TRAIT_INFINITE_STAMINA)) Srry but I need meff overdosess :)
+//		return TRUE
 	if(HAS_TRAIT(src, TRAIT_FORTITUDE))
 		added = added * 0.5
 	stamina = CLAMP(stamina+added, 0, max_stamina)
