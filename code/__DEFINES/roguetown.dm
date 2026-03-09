@@ -209,6 +209,7 @@
 	/datum/species/demihuman,\
 	/datum/species/tieberian,\
 	/datum/species/anthromorph,\
+	/datum/species/human/halfelf,\
 )
 
 #define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
