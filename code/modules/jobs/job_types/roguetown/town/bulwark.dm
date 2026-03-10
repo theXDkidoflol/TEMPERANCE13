@@ -46,11 +46,13 @@
 	H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/armorsmithing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
-	H.change_stat("constitution", 1)
+	H.change_stat("constitution", 2)
 	H.change_stat("endurance", 1)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 2)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BREADY, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 
 
 /datum/job/roguetown/bulwark/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
@@ -72,7 +74,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/chestrig
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 2,
-		/obj/item/ammo_box/handfuls/shotgun = 4,
+		/obj/item/ammo_box/handfuls/shotgun = 6,
 		/obj/item/storage/belt/rogue/pouch/coins/mid,
 		/obj/item/storage/keyring/gatemaster,
 	)
@@ -89,7 +91,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/chestrig
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew = 2,
-		/obj/item/ammo_box/clip/reaper = 4,
+		/obj/item/ammo_box/clip/reaper = 6,
 		/obj/item/storage/belt/rogue/pouch/coins/mid,
 		/obj/item/storage/keyring/gatemaster,
 	)

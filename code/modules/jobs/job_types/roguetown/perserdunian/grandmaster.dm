@@ -54,7 +54,7 @@
 	id = /obj/item/roguekey/perserdun
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
 	backpack_contents = list(
-		/obj/item/ammo_box/speedloader/magnum = 4,
+		/obj/item/ammo_box/speedloader/magnum = 6,
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
 		/obj/item/storage/belt/rogue/pouch/coins/rich,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew,
@@ -77,6 +77,7 @@
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BREADY, TRAIT_GENERIC)
 
 GLOBAL_VAR_INIT(grandmaster_raid_cooldown, -50000) // Antispam
 
