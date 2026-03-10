@@ -1928,12 +1928,6 @@
 	},
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/perserdun)
-"Ag" = (
-/obj/item/roguebin/crackers{
-	name = "CRACKERS"
-	},
-/turf/open/floor/rogue/perdun,
-/area/rogue/indoors/perserdunbase)
 "Au" = (
 /turf/closed/wall/mineral/rogue/perserdun/center,
 /area/rogue/indoors/perserdunbase)
@@ -2157,7 +2151,10 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
 "Er" = (
-/obj/structure/fluff/traveltile,
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "perserdunout";
+	aportalid = "perserdun"
+	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/perserdun)
 "Ev" = (
@@ -2851,7 +2848,10 @@
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/perserdun)
 "NX" = (
-/obj/structure/fluff/traveltile,
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "perserdunout";
+	aportalid = "perserdun"
+	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/perserdun)
 "NY" = (
@@ -3047,6 +3047,12 @@
 /obj/item/natural/feather,
 /obj/item/natural/feather,
 /turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/perserdunbase)
+"Qj" = (
+/obj/item/roguebin/crackers{
+	name = "CRACKERS"
+	},
+/turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "Qr" = (
 /turf/open/floor/rogue/warmetal,
@@ -17344,7 +17350,7 @@ HW
 CQ
 tl
 Qd
-Ag
+Qj
 CQ
 mN
 IE
@@ -17480,7 +17486,7 @@ CQ
 CQ
 qW
 qW
-Ag
+Qj
 Dz
 CQ
 CQ
