@@ -1,5 +1,5 @@
 
-//heavy armor
+//this shit is mad broken and slated to be deleted. oops!
 
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/ebarmor
@@ -87,43 +87,7 @@
 	equip_delay_other = 1 SECONDS
 	strip_delay = 2 SECONDS
 	smelt_bar_num = 4
-	max_integrity = 1000
-
-/obj/item/clothing/suit/roguetown/armor/plate/full/iron/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/layeredarmor/grandknight)
-
-/datum/component/layeredarmor/grandknight/
-	hits_to_shred = list(
-		"blunt" = 10,
-		"slash" = 10,
-		"stab" = 10,
-		"piercing" = 10,
-	)
-
-	layer_max = list(
-		"blunt" = 40,
-		"slash" = 100,
-		"stab" = 100,
-		"piercing" = 90,
-	)
-
-	hits_per_layer = list(
-		"100"	= 10,
-		"70" 	= 10,
-		"40" 	= 10,
-		"10" 	= 10,
-	)
-
-	shred_amt = 30
-
-	damtype_shred_ratio = list(
-		"blunt" = 1,
-		"slash" = 1,
-		"stab" = 1,
-		"piercing" = 3,
-	)
-
+	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
 
 //light armor
 

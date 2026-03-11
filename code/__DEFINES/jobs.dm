@@ -134,7 +134,6 @@
 
 #define YEOMEN		(1<<4)
 
-#define BARKEEP		(1<<0)
 #define ARCHIVIST	(1<<1)
 #define ALCHEMIST	(1<<5)
 #define MERCHANT	(1<<8)
@@ -238,6 +237,7 @@
 #define PROVISIONER (1<<3)
 #define MORTICIAN (1<<4)
 #define TOWNER (1<<5)
+#define BARKEEP (1<<6)
 
 #define UNAFFILIATED (1<<15)
 

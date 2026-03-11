@@ -738,11 +738,11 @@
 // garrison scoms/listenstones
 
 /obj/item/scomstone/garrison
-	name = "crownstone"
-	icon_state = "ring_crownscom"
-	desc = "A lavish golden ring with the mark of the Crown. Heavy and garish. The gem embedded flickering in excitement."
+	name = "communications device"
+	icon_state = "scomstoner1"
+	desc = "A wrist-mounted device used by the Empire."
 	var/garrisonline = TRUE
-	messagereceivedsound = 'sound/misc/garrisonscom.ogg'
+	messagereceivedsound = 'sound/misc/per_radio.ogg'
 	hearrange = 0
 	sellprice = 100
 
@@ -759,7 +759,6 @@
 	if(length(input_text) > 100) //When these people talk too much, put that shit in slow motion, yeah
 		input_text = "<small>[input_text]</small>"
 	if(garrisonline)
-		input_text = "<big><span style='color: [GARRISON_SCOM_COLOR]'>[input_text]</span></big>" //Prettying up for Garrison line
 		for(var/obj/item/scomstone/bad/garrison/S in SSroguemachine.scomm_machines)
 			S.repeat_message(input_text, src, usedcolor)
 		for(var/obj/item/scomstone/garrison/S in SSroguemachine.scomm_machines)
@@ -769,25 +768,6 @@
 				S.repeat_message(input_text, src, usedcolor)
 		SSroguemachine.crown?.repeat_message(input_text, src, usedcolor)
 		return
-	for(var/obj/structure/roguemachine/scomm/S in SSroguemachine.scomm_machines)
-		S.repeat_message(input_text, src, usedcolor)
-	for(var/obj/item/scomstone/S in SSroguemachine.scomm_machines)
-		S.repeat_message(input_text, src, usedcolor)
-	for(var/obj/item/listenstone/S in SSroguemachine.scomm_machines)
-		S.repeat_message(input_text, src, usedcolor)
-	SSroguemachine.crown?.repeat_message(input_text, src, usedcolor)
-
-/obj/item/scomstone/garrison/attack_self(mob/living/user)
-	if(.)
-		return
-	user.changeNext_move(CLICK_CD_INTENTCAP)
-	playsound(loc, 'sound/misc/beep.ogg', 100, FALSE, -1)
-	garrisonline = !garrisonline
-	to_chat(user, span_info("I [garrisonline ? "connect to the garrison SCOMline" : "connect to the general SCOMline"]"))
-	update_icon()
-
-/obj/item/scomstone/garrison/update_icon()
-	icon_state = "[initial(icon_state)][garrisonline ? "_on" : ""]"
 
 /obj/item/scomstone/bad/garrison
 	name = "houndstone"

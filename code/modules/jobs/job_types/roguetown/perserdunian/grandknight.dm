@@ -43,7 +43,7 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
 	cloak = /obj/item/clothing/cloak/perserduntabard
-	pants = /datum/anvil_recipe/armor/iron/platelegs
+	pants = /obj/item/clothing/under/roguetown/platelegs/iron
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/iron
 	mask = /obj/item/clothing/mask/rogue/gasmask/perserdunmask
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
@@ -51,7 +51,7 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/gasgrenade
 	backl = /obj/item/rogueweapon/stoneaxe/oath
-	wrists = /obj/item/scomstone/empire
+	wrists = /obj/item/scomstone/garrison
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	id = /obj/item/roguekey/perserdun
 	backr = /obj/item/storage/backpack/rogue/backpack/perserdun
