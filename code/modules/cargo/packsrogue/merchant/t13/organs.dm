@@ -32,3 +32,9 @@
 	name = "REVIVER"
 	cost = 30
 	contains = list(/obj/item/reagent_containers/lux)
+
+/datum/supply_pack/rogue/organs/health
+	name = "HEALTH (x2)"
+	cost = 60
+	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew,
+	/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew)

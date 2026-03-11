@@ -376,11 +376,14 @@
 /obj/item/clothing/mask/rogue/gasmask/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(user.wear_mask == src)
+		ADD_TRAIT(user, TRAIT_NOSTINK, TRAIT_GENERIC)
 		worn = TRUE
 
 /obj/item/clothing/mask/rogue/gasmask/dropped(mob/user)
 	. = ..()
 	if(worn)
+		if(HAS_TRAIT(user, TRAIT_NOSTINK))
+			REMOVE_TRAIT(user, TRAIT_NOSTINK, TRAIT_GENERIC)
 		playsound(user, 'sound/items/gasmask/gasmask_off.ogg', 80)
 		worn = FALSE
 

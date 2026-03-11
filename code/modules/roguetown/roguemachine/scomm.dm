@@ -363,6 +363,8 @@
 		S.repeat_message(input_text, src, usedcolor)
 	for(var/obj/item/scomstone/S in SSroguemachine.scomm_machines)
 		S.repeat_message(input_text, src, usedcolor)
+	for(var/obj/item/scomstone/empire/S) in (SSroguemachine.scomm_machines)
+		return
 	for(var/obj/item/listenstone/S in SSroguemachine.scomm_machines)//make the listenstone hear scomstone
 		S.repeat_message(input_text, src, usedcolor)
 	SSroguemachine.crown?.repeat_message(input_text, src, usedcolor)
