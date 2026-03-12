@@ -27,6 +27,7 @@
 	var/list/bullet_cost
 	///cost of the materials in the magazine/box itself
 	var/list/base_cost
+	var/handful = FALSE
 
 /obj/item/ammo_box/Initialize()
 	. = ..()
@@ -37,7 +38,8 @@
 
 ///gets a round from the magazine, if keep is TRUE the round will stay in the gun
 /obj/item/ammo_box/proc/get_round(keep = FALSE)
-	if (!stored_ammo.len)
+	if (handful && !stored_ammo.len)
+		qdel(src)
 		return null
 	else
 		var/b = stored_ammo[stored_ammo.len]

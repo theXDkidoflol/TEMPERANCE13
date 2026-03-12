@@ -5,10 +5,7 @@
 	caliber = "a762"
 	max_ammo = 5
 	multiload = 0
-
-/obj/item/ammo_box/handfuls/proc/check_rounds()
-	if(!stored_ammo.len)
-		qdel(src)
+	handful = TRUE
 
 //rifle handfuls
 /obj/item/ammo_box/handfuls/rifle
