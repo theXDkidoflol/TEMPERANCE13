@@ -38,7 +38,7 @@
 		"Adventuring Supplies",
 		"Armor (Light)",
 		"FORTIFICATIONS",
-		"Weapons (Ranged)",
+		"GUNS",
 	)
 	categories_gamer = list()
 	icon_state = "ammovend_s"
