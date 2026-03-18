@@ -1234,9 +1234,9 @@
 /turf/open/floor/rogue/brown,
 /area/rogue/indoors/shelter/town)
 "hi" = (
-/obj/structure/fluff/wallclock/r,
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/shelter/town)
+/obj/structure/fluff/statue/femalestatue2,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors)
 "hj" = (
 /obj/item/reagent_containers/food/snacks/egg,
 /obj/item/reagent_containers/food/snacks/egg,
@@ -1989,6 +1989,10 @@
 	},
 /turf/open/floor/rogue/blocks/flipped,
 /area/rogue/indoors/shelter/town)
+"na" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/beach/forest/south)
 "nf" = (
 /obj/structure/fluff/railing/corner/south_west,
 /turf/open/floor/rogue/dirt/road,
@@ -2577,6 +2581,10 @@
 /obj/structure/mineral_door/wood/violet,
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/shelter/town)
+"qT" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
+/turf/closed/mineral/rogue,
+/area/rogue/under/cave)
 "qU" = (
 /turf/closed/mineral/rogue/copper,
 /area/rogue/under/cave)
@@ -4389,6 +4397,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/beach/forest/south)
+"Dy" = (
+/obj/machinery/light/roguestreet/midlamp,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/town)
 "DB" = (
 /obj/item/rope/chain,
 /turf/open/floor/rogue/naturalstone,
@@ -5767,12 +5779,6 @@
 /obj/structure/mineral_door/wood/fancywood{
 	lockid = "garrison"
 	},
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "garrison"
-	},
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "garrison"
-	},
 /turf/open/floor/rogue/brown,
 /area/rogue/indoors/shelter/town)
 "MB" = (
@@ -5938,6 +5944,7 @@
 /area/rogue/outdoors/town)
 "ND" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/structure/fluff/statue/small,
 /turf/open/floor/rogue/blocks/flipped,
 /area/rogue/indoors/shelter/town)
 "NE" = (
@@ -16851,7 +16858,7 @@ md
 TY
 TY
 TY
-TY
+qT
 aX
 TY
 aX
@@ -23895,7 +23902,7 @@ jm
 jm
 uf
 hL
-hi
+Vy
 ND
 mZ
 Xa
@@ -62302,7 +62309,7 @@ xP
 Hf
 tn
 tn
-Hf
+na
 Hf
 Hf
 Hf
@@ -65130,7 +65137,7 @@ xP
 Zm
 xP
 Hf
-Hf
+na
 Hf
 xP
 hc
@@ -65259,7 +65266,7 @@ Hf
 xP
 Hf
 Hf
-Hf
+na
 Hf
 xP
 tn
@@ -68659,7 +68666,7 @@ xP
 Hf
 Hf
 Hf
-Hf
+na
 Hf
 Hf
 hc
@@ -73687,7 +73694,7 @@ Hf
 Hf
 Hf
 Hf
-Hf
+na
 Hf
 Hf
 tn
@@ -75394,10 +75401,10 @@ Ot
 Ot
 Ot
 Mo
-Cr
+Dy
 jO
 jO
-Cr
+Dy
 Mo
 Ot
 Ot
@@ -76204,7 +76211,7 @@ hc
 xP
 xP
 Hf
-Hf
+na
 Hf
 Hf
 Hf
@@ -78031,7 +78038,7 @@ tn
 hc
 xP
 Hf
-Hf
+na
 Hf
 Hf
 xP
@@ -95434,14 +95441,14 @@ wb
 ej
 wK
 ej
-ej
-ej
+vF
+Ka
 wK
 ej
 ej
-wK
-ej
-wK
+Ka
+Ka
+vF
 wK
 SL
 SL
@@ -95664,11 +95671,11 @@ ej
 RH
 RH
 ej
+RH
 ej
-ej
-ej
-ej
-ej
+RH
+RH
+RH
 ej
 ej
 wK
@@ -95889,13 +95896,13 @@ wK
 fZ
 wK
 RH
-wK
+hi
 ej
 ej
 ej
 ej
 RH
-RH
+wb
 ej
 wK
 wK
@@ -96342,7 +96349,7 @@ wb
 fZ
 OP
 ej
-ej
+wb
 ej
 wK
 ej
@@ -96569,12 +96576,12 @@ wb
 ej
 wK
 ej
-wK
+vF
 wK
 wK
 ej
 ej
-ej
+RH
 wK
 ej
 ej
@@ -99905,7 +99912,7 @@ Hf
 tn
 tn
 Hf
-Hf
+na
 Hf
 Hf
 Hf
