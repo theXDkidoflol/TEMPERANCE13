@@ -202,6 +202,13 @@
 		src.w_class = WEIGHT_CLASS_SMALL
 		update_icon(src)
 
+/obj/item/rogueweapon/shovel/small/etool/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = 4,"sy" = -4,"nx" = 6,"ny" = -2,"wx" = -4,"wy" = -4,"ex" = 5,"ey" = -5,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 94,"sturn" = -75,"wturn" = -70,"eturn" = 77,"nflip" = 0,"sflip" = 8,"wflip" = 8,"eflip" = 0)
+
 
 /obj/item/rogueweapon/shovel/aalloy
 	force = 8
