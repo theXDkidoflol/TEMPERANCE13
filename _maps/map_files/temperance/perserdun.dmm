@@ -860,7 +860,16 @@
 /obj/structure/table/wood/perserdunsmall{
 	pixel_y = -1
 	},
-/obj/item/rogueweapon/huntingknife/idagger,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
 /turf/open/floor/rogue/perdun,
 /area/rogue/indoors/perserdunbase)
 "lX" = (

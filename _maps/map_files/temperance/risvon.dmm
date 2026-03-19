@@ -1790,6 +1790,20 @@
 /obj/structure/roguerock,
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/risvon)
+"pv" = (
+/obj/structure/table/wood/poor,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/obj/item/rogueweapon/shovel/small/etool,
+/turf/open/floor/rogue/risvon,
+/area/rogue/indoors/risvonbase)
 "pw" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/effect/decal/cleanable/blood/old{
@@ -13534,7 +13548,7 @@ xK
 at
 iw
 KM
-xK
+pv
 Tx
 XO
 Qw
