@@ -1632,6 +1632,7 @@
 #include "code\modules\jobs\job_types\roguetown\risvonian\oficiro.dm"
 #include "code\modules\jobs\job_types\roguetown\risvonian\servisto.dm"
 #include "code\modules\jobs\job_types\roguetown\risvonian\soldato.dm"
+#include "code\modules\jobs\job_types\roguetown\risvonian\tuoro.dm"
 #include "code\modules\jobs\job_types\roguetown\risvonian\veterano.dm"
 #include "code\modules\jobs\job_types\roguetown\town\bulwark.dm"
 #include "code\modules\jobs\job_types\roguetown\town\hierarch.dm"
