@@ -196,6 +196,8 @@ GLOBAL_LIST_INIT(risvon_positions, list(
 	"Oficiro",
 	"Veterano",
 	"Soldato",
+	"Armilteknikisto",
+	"Municioteknikisto",
 	"Servisto",
 	"Curacisto",
 	"Camp Follower",

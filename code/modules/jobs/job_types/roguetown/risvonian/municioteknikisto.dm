@@ -52,7 +52,7 @@
 	wrists = /obj/item/scomstone
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	id = /obj/item/roguekey/risvon
-	backr = /obj/item/storage/backpack/rogue/backpack/mg
+	backr = /obj/item/storage/backpack/rogue/satchel/chestrig
 	backl = /obj/item/gun/ballistic/rifle/repeater/pistol
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/hmg/a762x59 = 8,
