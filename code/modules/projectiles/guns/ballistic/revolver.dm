@@ -121,6 +121,22 @@
 	recoil = 0.30
 	experimental_inhand = FALSE
 
+/obj/item/gun/ballistic/revolver/webley
+	name = "'Kesha' Break Open Revolver"
+	desc = "A classic Kalarian revolver, known for its reliability and it's intuitive break open cylinder, or at least that's what the gunsmith told you."
+	w_class = WEIGHT_CLASS_SMALL
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/revolver
+	force = 10
+	spread = 6
+	icon_state = "webley"
+	item_state = "webley"
+	slowdown = 0.15
+	empty_indicator = TRUE
+	fire_sound = REVOLVERSHOT
+	load_sound = REVOLVERINSERT
+	recoil = 0.30
+	experimental_inhand = FALSE
+
 
 //dogshit double barrel shotgun code
 
