@@ -64,7 +64,7 @@
 
 		if("Debt Collector")
 			
-			to_chat(H, span_warning("You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die."))
+			to_chat(H, span_warning("Here to collect someone's debt or make sure someone's gonna be owin' ya, you've got the dosh to lend and the muscle to retrieve."))
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/suit/roguetown/armor/longcoat
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
