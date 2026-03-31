@@ -33,6 +33,7 @@
 			head = /obj/item/clothing/head/roguetown/inqhat
 			backpack_contents = list(
 				/obj/item/flashlight/flare/torch = 1,
+				/obj/item/lockpick = 1, 
 				/obj/item/rogueweapon/mace/cudgel = 1,
 				/obj/item/lockpickring/mundane = 1,
 				/obj/item/ammo_box/speedloader/magnum = 3,
