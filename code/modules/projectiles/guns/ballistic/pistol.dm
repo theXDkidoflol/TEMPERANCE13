@@ -72,7 +72,7 @@
 
 /obj/item/gun/ballistic/rifle/repeater/pistol 
 	name = "SiR 'Harland'"
-	desc = "A clip-loaded pistol. Mass produced, and issued to Risvon Soldats. Requires manual cocking."
+	desc = "A clip-loaded pistol. Mass produced, and issued to Risvon Soldats."
 	icon_state = "pocketpistol"
 	item_state = "pocketpistol"
 	w_class = WEIGHT_CLASS_SMALL
@@ -84,6 +84,7 @@
 	load_sound = 'sound/combat/ranged/clipload.ogg'
 	recoil = 0.15
 	slot_flags = ITEM_SLOT_HIP
+	semi_auto = TRUE
 
 /obj/item/gun/ballistic/rifle/repeater/jackal 
 	name = "SPR 'Jackal'"
