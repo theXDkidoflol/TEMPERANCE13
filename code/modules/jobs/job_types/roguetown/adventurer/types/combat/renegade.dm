@@ -4,6 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_CONSCRIPT
 	outfit = /datum/outfit/job/roguetown/adventurer/gunslinger
+	maximum_possible_slots = 5
 	traits_applied = list(TRAIT_OUTLANDER)
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	classes = list("Perpretrator" = "In all honesty, you're probably a criminal. You have a double-barreled shotgun.",
