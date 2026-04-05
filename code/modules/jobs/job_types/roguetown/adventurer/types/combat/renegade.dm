@@ -11,7 +11,7 @@
 					"Desperado" = "You might just be a bandit, or a cowboy lover. You carry a mass-produced revolver.",
 					"Gangster" = "You're probably from a gang. Or, you happened to kill whoever held the pistol before you. Make some money, grab some guns. Try not to die.",)
 
-/datum/outfit/job/roguetown/adventurer/gunslinger/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/adventurer/renegade/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	var/classes = list("Perpretrator","Desperado","Gangster")
