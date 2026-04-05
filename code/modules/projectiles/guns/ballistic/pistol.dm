@@ -119,7 +119,7 @@
 	semi_auto = TRUE
 	slot_flags = ITEM_SLOT_BACK
 
-/obj/item/gun/ballistic/pistol/fury
+/obj/item/gun/ballistic/rifle/repeater/fury
 	name = "XOZ 'Fury'"
 	desc = "A rather rare semi-auto pistol."
 	icon_state = "colt"
@@ -134,8 +134,9 @@
 	eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
 	recoil = 0.15
 	semi_auto = TRUE
+	slot_flags = ITEM_SLOT_HIP
 
-/obj/item/gun/ballistic/pistol/broomhandle
+/obj/item/gun/ballistic/rifle/repeater/broomhandle
 	name = "KR 'Trenchsweeper'"
 	desc = "Heavy and uncomfortable, almost requiring two hands to pull this thing up. Engraved with a golden 'KR'. Loads rifle rounds"
 	icon_state = "broomhandle"
@@ -152,25 +153,9 @@
 	semi_auto = TRUE
 	slot_flags = ITEM_SLOT_BACK
 
-/obj/item/gun/ballistic/pistol/luger
+/obj/item/gun/ballistic/rifle/repeater/luger
     name = "KR 'Confessor'"
     desc = "You know, they say that these guns are unique to King's Row - coming from an Outlet that hasn't been discovered by either of the two Nations."
-    icon_state = "luger"
-    item_state = "luger"
-    w_class = WEIGHT_CLASS_SMALL
-    mag_type = /obj/item/ammo_box/magazine/luger
-    slowdown = 0.15
-    spread = 0.5
-    force = 15 
-    fire_sound = PISTOLSHOT
-    load_sound = 'sound/combat/ranged/pistol_magin.ogg'
-    eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
-    recoil = 0.15
-    semi_auto = TRUE
-
-/obj/item/gun/ballistic/pistol/offiseroluger
-    name = "ZOM 'Galinha'"
-    desc = "Straight from the Machine."
     icon_state = "officerluger"
     item_state = "officerluger"
     w_class = WEIGHT_CLASS_SMALL
@@ -183,8 +168,26 @@
     eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
     recoil = 0.15
     semi_auto = TRUE
+    slot_flags = ITEM_SLOT_HIP
 
-/obj/item/gun/ballistic/pistol/artyluger
+/obj/item/gun/ballistic/rifle/repeater/offiseroluger
+    name = "ZOM 'Galinha'"
+    desc = "Straight from the Machine."
+    icon_state = "luger"
+    item_state = "luger"
+    w_class = WEIGHT_CLASS_SMALL
+    mag_type = /obj/item/ammo_box/magazine/luger
+    slowdown = 0.15
+    spread = 0.5
+    force = 15 
+    fire_sound = PISTOLSHOT
+    load_sound = 'sound/combat/ranged/pistol_magin.ogg'
+    eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
+    recoil = 0.15
+    semi_auto = TRUE
+    slot_flags = ITEM_SLOT_HIP
+
+/obj/item/gun/ballistic/rifle/repeater/artyluger
     name = "KR 'Preacher'"
     desc = "In-house modification of a Confessor, rather expensive."
     icon_state = "artyluger"

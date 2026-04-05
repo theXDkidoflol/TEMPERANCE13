@@ -32,7 +32,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/bulwark
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
-	beltl = /obj/item/gun/ballistic/pistol/luger
+	beltl = /obj/item/gun/ballistic/rifle/repeater/luger
 	beltr = /obj/item/storage/belt/rogue/pouch/stim
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	wrists = /obj/item/scomstone/kingsrow

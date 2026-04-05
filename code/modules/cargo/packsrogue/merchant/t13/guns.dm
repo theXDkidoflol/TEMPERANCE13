@@ -42,19 +42,19 @@
 	name = "KR 'Confessor' Pistol"
 	cost = 85
 	contains = list(
-					/obj/item/gun/ballistic/pistol/luger,
+					/obj/item/gun/ballistic/rifle/repeater/luger,
 				)
 
 /datum/supply_pack/rogue/firearms/artyluger
 	name = "KR 'Preacher' Stocked Pistol"
 	cost = 180
 	contains = list(
-					/obj/item/gun/ballistic/pistol/artyluger,
+					/obj/item/gun/ballistic/rifle/repeater/artyluger,
 				)
 
 /datum/supply_pack/rogue/firearms/fury
 	name = "Fury Semi-Automatic Pistol"
 	cost = 90
 	contains = list(
-					/obj/item/gun/ballistic/pistol/fury,
+					/obj/item/gun/ballistic/rifle/repeater/fury,
 				)
