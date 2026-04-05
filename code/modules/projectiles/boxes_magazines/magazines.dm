@@ -35,7 +35,7 @@
     multiple_sprites = AMMO_BOX_FULL_EMPTY
     ammo_type = /obj/item/ammo_casing/a9mm
     caliber = "a9mm"
-    max_ammo = 8
+    max_ammo = 9
     multiload = 1
     icon_state = "lugermag"
 
