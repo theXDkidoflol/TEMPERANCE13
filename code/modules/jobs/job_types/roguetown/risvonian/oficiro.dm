@@ -74,6 +74,7 @@
 	H.adjust_skillrank(/datum/skill/combat/rifles, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/pistols, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/armorsmithing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
 	H.change_stat("constitution", 1)
 	H.change_stat("endurance", 1)

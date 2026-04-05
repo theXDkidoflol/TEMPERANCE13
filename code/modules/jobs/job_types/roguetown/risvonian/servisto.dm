@@ -32,7 +32,7 @@
 			if(!index)
 				index = H.real_name
 			S.name = " [index]'s nailtag"
-
+    
 /datum/outfit/job/roguetown/servisto/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots

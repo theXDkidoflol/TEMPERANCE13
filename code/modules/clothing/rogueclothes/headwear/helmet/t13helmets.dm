@@ -88,3 +88,13 @@
 	experimental_onhip = FALSE
 	sellprice = 200
 	flags_inv = HIDE_HEADTOP
+
+/obj/item/clothing/head/roguetown/veil
+	name = "veil"
+	desc = "For the Divegat."
+	icon_state = "veil"
+	item_state = "veil"
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	dynamic_hair_suffix = ""
+	sewrepair = TRUE
+	//dropshrink = 0.75

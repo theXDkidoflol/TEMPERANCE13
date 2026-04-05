@@ -491,6 +491,18 @@
 		/obj/item/ammo_box/clip/pistol,
 	)
 
+/obj/item/storage/belt/rogue/pouch/ammobag/amr
+	name = "ammo sack"
+	desc = "A leather satchel meant to carry boxes of .50 caliber rounds."
+	icon_state = "warfare_satchel"
+	item_state = "warfare_satchel"
+	component_type = /datum/component/storage/concrete/grid/amr
+	populate_contents = list(
+			/obj/item/ammo_box/boxes/amr = 4,
+	)
+
+
+
 /obj/item/storage/backpack/rogue/backpack/perserdun
 	name = "ruckbag"
 	desc = "Product of the Empire's vast industry."
