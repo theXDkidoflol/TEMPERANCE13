@@ -205,3 +205,21 @@
     eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
     recoil = 0.05 //stocked pistol
     semi_auto = TRUE
+
+/obj/item/gun/ballistic/rifle/repeater/infiltrator
+    name = "KR 'Infiltrator'"
+    desc = "Twenty rounds, sounds good until you run out. This thing seems to be made quickly, just a shitty gun, looks like it'll overheat by the time you finish shooting all those rounds, best to dump it than to bother trying to reload it."
+    icon_state = "mauser"
+    item_state = "mauser"
+    w_class = WEIGHT_CLASS_SMALL
+    mag_type = /obj/item/ammo_box/magazine/internal/boltaction/infiltrator
+    slowdown = 0.15
+    spread = 0.5
+    force = 15 
+    pump_sound = 'sound/combat/ranged/pistol_cock.ogg'
+    fire_sound = PISTOLSHOT
+    load_sound = 'sound/combat/ranged/pistol_magin.ogg'
+    eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
+    recoil = 0.15
+    semi_auto = TRUE
+    slot_flags = ITEM_SLOT_HIP

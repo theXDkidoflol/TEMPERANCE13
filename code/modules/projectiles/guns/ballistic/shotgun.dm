@@ -148,3 +148,47 @@
 	pump_sound = 'sound/combat/ranged/shotgunpump.ogg'
 	recoil = 0.15
 	load_sound = SHOTGUNINSERT
+
+/obj/item/gun/ballistic/rifle/repeater/auto8
+	name = "AO-8 'Willbreaker'"
+	desc = "Someone must've looked at a Pax and then at a reaper and thought both were good ideas, good ideas that could be improved upon, scaled up and made better. The MACHINE just made that thought into a reality. Eight rounds plus one in a semi automatic shotgun. Make it count."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "auto8"
+	item_state = "auto8"
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/auto8
+	slowdown = 0.15
+	spread = 0.5
+	fire_sound = SHOTGUNSHOT
+	pump_sound = 'sound/combat/ranged/patiencecock.ogg'
+	recoil = 0.15
+	load_sound = SHOTGUNINSERT
+	semi_auto = TRUE
+
+/obj/item/gun/ballistic/rifle/repeater/auto5
+	name = "Sawed off AO-5 'Gloria'"
+	desc = "A cut down semi automatic AO-5, looks to be easier to draw but shittier to handle. A rarity of a shotgun, too bad it's too late to save it from being chopped up. It's got a engraving on the side, it reads 'Gloria'."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "auto5"
+	item_state = "auto5"
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/auto5
+	slowdown = 0.15
+	spread = 0.5
+	fire_sound = SHOTGUNSHOT
+	pump_sound = 'sound/combat/ranged/patiencecock.ogg'
+	recoil = 0.15
+	load_sound = SHOTGUNINSERT
+	semi_auto = TRUE
+
+/obj/item/gun/ballistic/shotgun/levershotgun
+	name = "M&C 'Hare' Lever Action Shotgun"
+	desc = "Old thing this is, but it still works, pretty well too for its age. It's got a lever action, pull it to chamber the round, and to eject the casing. Treat her well and she'll treat you well back. The stamp on the side reads 'Hare Lever Action Shotgun, Manufactured by Machine & Co, Caliber 12 Gauge'."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "levershotgun"
+	item_state = "levershotgun"
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/levershotgun
+	slowdown = 0.15
+	spread = 0.5
+	fire_sound = SHOTGUNSHOT
+	pump_sound = 'sound/combat/ranged/leveractioncock.ogg'
+	recoil = 0.15
+	load_sound = SHOTGUNINSERT
