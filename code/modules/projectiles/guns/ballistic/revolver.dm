@@ -174,8 +174,8 @@
 	slot_flags = ITEM_SLOT_BACK
 
 /obj/item/gun/ballistic/revolver/sawedoff
-	name = "'Persuader' Sawed off Single Barrel Shotgun"
-	desc = "A barebones sawed off single barrel shotgun. Looks like shit, Pretty heavy, could probably be thrown as a last resort."
+	name = "TIZ 'Persuader' Pocket Shotgun"
+	desc = "A one-shot, sawed off shotgun. This configuration's typically made by outlaws to help with deal negotiation."
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/sawedoff
 	force = 20
@@ -192,8 +192,8 @@
 	slot_flags = ITEM_SLOT_HIP
 
 /obj/item/gun/ballistic/revolver/judge
-	name = "'Judge' Revolving Rifle"
-	desc = "An extremely expensive weapon carried by merchants and nobles, at least those who like the classices. It looks well maintained, polished, and always primed... It's got a pretty large price tag on it as well, so you shouldn't be holding it."
+	name = "TYK 'Judge' Revolving Shotgun"
+	desc = "A shotgun-revolver hybrid. Usually used by national guards or gamesmen."
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/judge
 	force = 30 //fat stock
