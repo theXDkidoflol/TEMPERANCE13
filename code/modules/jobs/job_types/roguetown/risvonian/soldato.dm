@@ -54,7 +54,6 @@
 	backl = /obj/item/gun/ballistic/rifle/repeater/springfield
 	backr = /obj/item/storage/backpack/rogue/backpack/risvon
 	backpack_contents = list(
-		/obj/item/gun/ballistic/rifle/repeater/pistol,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
 		/obj/item/smokegrenade = 1,
 		/obj/item/rogueweapon/stoneaxe/woodcut/risvon,
