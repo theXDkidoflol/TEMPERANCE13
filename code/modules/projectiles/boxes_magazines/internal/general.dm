@@ -113,6 +113,14 @@
 	name = "infiltrator internal magazine"
 	desc = "please ahelp if u find me"
 	ammo_type = /obj/item/ammo_casing/a22lr
-	caliber = "a22lr"
+	caliber = "a30"
 	max_ammo = 20
+	multiload = 1
+
+/obj/item/ammo_box/magazine/internal/boltaction/mondragon
+	name = "mondragon internal magazine"
+	desc = "please ahelp if u find me"
+	ammo_type = /obj/item/ammo_casing/a762lp
+	caliber = "a762lp"
+	max_ammo = 10
 	multiload = 1

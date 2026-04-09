@@ -17,6 +17,15 @@
 	multiload = 0
 	icon_state = "rifle-handful_QT"
 
+/obj/item/ammo_box/handfuls/rifle/762lp
+	name = "handful of 7.62LP bullets"
+	desc = "A handful of low powder rifle bullets."
+	ammo_type = /obj/item/ammo_casing/a762lp
+	caliber = "a762lp"
+	max_ammo = 5
+	multiload = 0
+	icon_state = "rifle-handful"
+
 /obj/item/ammo_box/handfuls/leveraction
 	name = "handful of custom bullets"
 	desc = "A handful of modified pistol bullets, made in Perserdun."

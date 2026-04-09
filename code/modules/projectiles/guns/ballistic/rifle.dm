@@ -225,14 +225,37 @@
 
 /obj/item/gun/ballistic/rifle/repeater/mondragon
 	name = "YKA 'Dragoon'"
-	desc = "A straight-bolt action rifle. Usually found in the hands of civilian hunters."
+	desc = "A weaker semi automatic rifle than the reaper. What it lacks in power, it makes up for in capacity, and the ability to be suppressed."
 	icon = 'icons/roguetown/weapons/48guns.dmi'
 	icon_state = "dragoon"
 	item_state = "dragoon"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mondragon
+	slowdown = 0.15
+	spread = 0.5
+	pump_sound = 'sound/combat/ranged/riflecock.ogg'
+	fire_sound = 'sound/combat/ranged/suppressed_fire.ogg'
+	load_sound = 'sound/combat/ranged/rifleload.ogg'
+	recoil = 0.15
+	semi_auto = TRUE
+
+/obj/item/gun/ballistic/rifle/repeater/springfield
+	name = "MFG 'Springer'"
+	desc = "A straight-bolt action rifle. Usually found in the hands of Risvon military and civilian hunters."
+	icon_state = "springfield"
+	item_state = "springfield"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/perserdun
 	slowdown = 0.15
 	spread = 0.5
 	pump_sound = 'sound/combat/ranged/riflecock.ogg'
-	fire_sound = RIFLESHOT
-	load_sound = 'sound/combat/ranged/rifleload.ogg'
-	recoil = 0.15
+	fire
+
+/obj/item/gun/ballistic/rifle/repeater/enfield
+	name = "FKZ 'Flicker'"
+	desc = "A straight-bolt action rifle with an extended internal magazine. Usually found in the hands of civilian hunters looking for a weapon with a lower load."
+	icon_state = "enfield"
+	item_state = "enfield"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/mondragon
+	slowdown = 0.15
+	spread = 0.5
+	pump_sound = 'sound/combat/ranged/riflecock.ogg'
+	fire

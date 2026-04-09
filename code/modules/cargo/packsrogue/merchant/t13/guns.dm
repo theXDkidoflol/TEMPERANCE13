@@ -4,8 +4,8 @@
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
 /datum/supply_pack/rogue/firearms/mondragon
-	name = "Mondragon Rifle"
-	cost = 70
+	name = "Mondragon Semi-Automatic Rifle"
+	cost = 200 //t3 weapon
 	contains = list(
 					/obj/item/gun/ballistic/rifle/repeater/mondragon,
 				)
@@ -75,7 +75,7 @@
 
 /datum/supply_pack/rogue/firearms/levershotgun
 	name = "M&C 'Hare' Lever Action Shotgun"
-	cost = 180
+	cost = 160 //not a t3 weapon but still pretty expensive because of the ammo capacity and the fact that it's a shotgun
 	contains = list(
 					/obj/item/gun/ballistic/shotgun/levershotgun,
 				)
