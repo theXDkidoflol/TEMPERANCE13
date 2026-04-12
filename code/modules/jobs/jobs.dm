@@ -199,6 +199,7 @@ GLOBAL_LIST_INIT(risvon_positions, list(
 	"Kaspafisto",
 	"Veterano",
 	"Soldato",
+	"Magiisto",
 	"Bastiono",
 	"Armilteknikisto",
 	"Municioteknikisto",
@@ -212,6 +213,7 @@ GLOBAL_LIST_INIT(kingsrow_positions, list(
 	"Hierarch",
 	"Bulwark",
 	"Provisioner",
+	"Barkeeper",
 	"Towner",
 	"Mortician",
 ))
