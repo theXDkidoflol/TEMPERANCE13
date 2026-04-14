@@ -96,7 +96,7 @@
 			return FALSE
 
 		if(target.blood_volume >= BLOOD_VOLUME_NORMAL)
-			to_chat(UH, span_warning("Their lyfeblood is at capacity. There is no need."))
+			to_chat(UH, span_warning("Their blood is at capacity. There is no need."))
 			revert_cast()
 			return FALSE
 
