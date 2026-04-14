@@ -213,13 +213,14 @@
 #define GRANDMASTER	(1<<0) // no-armor leadership wimp w/ drip
 #define GRANDKNIGHT (1<<1) // heaviest armor in the game - very tanky - melee only - consider adding a shield
 #define KNIGHTCOMMANDER (1<<2) //better armor + sawn down lever-action & a sword
-#define AUXILIARIST	(1<<3) //support role - same w/ servico
-#define ARMSMAN	(1<<4) //standard soldier w/ a rifle
-#define ROOK (1<<5) // terdun machine gunner
-#define AMMOSQUIRE (1<<6) // terdun ammo bearer
-#define CHIRURGEON (1<<7)
-#define PARTISAN (1<<8)
-#define ENVOY (1<<9)
+#define VOLTIGEUR (1<<3) //high speed shotgun flanker, with recon potential to boot
+#define AUXILIARIST	(1<<4) //support role - same w/ servico
+#define ARMSMAN	(1<<5) //standard soldier w/ a rifle
+#define ROOK (1<<6) // terdun machine gunner
+#define AMMOSQUIRE (1<<7) // terdun ammo bearer
+#define CHIRURGEON (1<<8)
+#define PARTISAN (1<<9)
+#define ENVOY (1<<10)
 
 #define RISVON	(1<<13)
 
@@ -271,13 +272,14 @@
 #define JDO_GRANDMASTER 1
 #define JDO_GRANDKNIGHT 1.1
 #define JDO_KNIGHTCOMMANDER 1.2
-#define JDO_AUXILIARIST 1.3
-#define JDO_ARMSMAN 1.4
-#define JDO_ROOK 1.5
-#define JDO_AMMOSQUIRE 1.6
-#define JDO_CHIRURGEON 1.7
-#define JDO_PARTISAN 1.8
-#define JDO_ENVOY 1.82
+#define JDO_VOLTIGEUR 1.3
+#define JDO_AUXILIARIST 1.4
+#define JDO_ARMSMAN 1.5
+#define JDO_ROOK 1.6
+#define JDO_AMMOSQUIRE 1.7
+#define JDO_CHIRURGEON 1.8
+#define JDO_PARTISAN 1.9
+#define JDO_ENVOY 1.92
 
 // RISVON
 #define JDO_COMMANDANT 1.9
@@ -309,6 +311,7 @@
 	/datum/job/roguetown/grandmaster,\
 	/datum/job/roguetown/grandknight,\
 	/datum/job/roguetown/knightcommander,\
+	/datum/job/roguetown/voltigeur,\
 	/datum/job/roguetown/auxiliar,\
 	/datum/job/roguetown/armsman,\
 	/datum/job/roguetown/chirurgeon,\
