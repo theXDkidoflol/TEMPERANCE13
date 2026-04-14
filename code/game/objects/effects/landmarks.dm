@@ -458,6 +458,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Grand Knight")
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/warpriest
+	name = "War Priest"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/warpriestlate
+	name = "War Priest"
+	icon_state = "arrow"
+	jobspawn_override = list("War Priest")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/knightcommander
 	name = "Knight Commander"
 	icon_state = "arrow"
