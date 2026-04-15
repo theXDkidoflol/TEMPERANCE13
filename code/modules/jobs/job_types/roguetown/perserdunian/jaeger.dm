@@ -21,7 +21,7 @@
 
 	cmode_music = 'sound/music/combat_armsman.ogg'
 
-/datum/job/roguetown/armsman/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/jaeger/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
@@ -34,7 +34,7 @@
 				index = H.real_name
 			S.name = " [index]'s dogtag"
 
-/datum/outfit/job/roguetown/armsman/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/jaeger/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/jacket
