@@ -101,7 +101,7 @@
 	item_state = "revolver"
 	slowdown = 0.15
 	empty_indicator = TRUE
-	fire_sound = REVOLVERSHOT
+	fire_sound = 'sound/combat/ranged/garlandfire.ogg'
 	load_sound = REVOLVERINSERT
 	recoil = 0.15
 	experimental_inhand = FALSE
@@ -133,7 +133,7 @@
 	item_state = "webley"
 	slowdown = 0.15
 	empty_indicator = TRUE
-	fire_sound = REVOLVERSHOT
+	fire_sound = 'sound/combat/ranged/webleyfire.ogg'
 	load_sound = REVOLVERINSERT
 	recoil = 0.30
 	experimental_inhand = FALSE
@@ -161,7 +161,7 @@
 	desc = "A cheap, double barrel shotgun. Usually made by the guy that's holding it."
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/risvon
-	force = 20
+	force = 30
 	spread = 0.5
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -178,7 +178,7 @@
 	desc = "A one-shot, sawed off shotgun. This configuration's typically made by outlaws to help with deal negotiation."
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/sawedoff
-	force = 20
+	force = 30
 	throwforce = 40
 	spread = 0.8 // the fuck you think you're gonna hit with that barrel?
 	icon_state = "singlebarrel"
@@ -203,7 +203,7 @@
 	item_state = "revolvingrifle"
 	slowdown = 0.2 //slower
 	empty_indicator = TRUE
-	fire_sound = REVOLVERSHOT
+	fire_sound = 'sound/combat/ranged/garlandfire.ogg'
 	load_sound = REVOLVERINSERT
 	recoil = 0.1
 	experimental_inhand = FALSE

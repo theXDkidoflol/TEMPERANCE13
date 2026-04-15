@@ -158,7 +158,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/auto8
 	slowdown = 0.15
 	spread = 0.5
-	fire_sound = SHOTGUNSHOT
+	fire_sound = 'sound/combat/ranged/autosgfire.ogg'
 	pump_sound = 'sound/combat/ranged/patiencecock.ogg'
 	recoil = 0.15
 	load_sound = SHOTGUNINSERT
@@ -173,7 +173,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/auto5
 	slowdown = 0.15
 	spread = 0.5
-	fire_sound = SHOTGUNSHOT
+	fire_sound = 'sound/combat/ranged/autosg2fire.ogg'
 	pump_sound = 'sound/combat/ranged/patiencecock.ogg'
 	recoil = 0.15
 	load_sound = SHOTGUNINSERT
