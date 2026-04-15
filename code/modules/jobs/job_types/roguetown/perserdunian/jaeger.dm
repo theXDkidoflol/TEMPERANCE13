@@ -77,7 +77,7 @@
 	H.adjust_skillrank(/datum/skill/craft/armorsmithing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/trapmaking, 6, TRUE) //lets them open up beartraps at a 100% chance instead of the default 10%-20% success chance
+	H.adjust_skillrank(/datum/skill/craft/traps, 6, TRUE) //lets them open up beartraps at a 100% chance instead of the default 10%-20% success chance
 	H.change_stat("endurance", 2)
 	H.change_stat("perception", 3)
 	H.change_stat("speed", 2)
