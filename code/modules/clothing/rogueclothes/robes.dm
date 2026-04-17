@@ -143,7 +143,7 @@
 	update_bloodied()
 
 /obj/item/clothing/suit/roguetown/shirt/robe/warpriest/proc/on_clean(datum/source, clean)
-	addtimer(CALLBACK(src, PROC_REF(update_bloodied)), 1)
+	addtimer(CALLBACK(src, PROC_REF(update_bloodied)), 1) // delay is required or it runs too early
 
 /obj/item/clothing/suit/roguetown/shirt/robe/monk
 	name = "monk vestments"
