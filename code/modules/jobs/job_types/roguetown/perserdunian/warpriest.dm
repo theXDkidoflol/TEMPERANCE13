@@ -53,7 +53,7 @@
 	wrists = /obj/item/scomstone/garrison
 	gloves = /obj/item/clothing/wrists/roguetown/wrappings/perserdun
 	id = /obj/item/roguekey/perserdun
-	backr = /obj/item/storage/backpack/rogue/satchel/perserdun
+	backr = /obj/item/storage/backpack/rogue/satchel/perserdun/warpriest
 	
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/mid,
