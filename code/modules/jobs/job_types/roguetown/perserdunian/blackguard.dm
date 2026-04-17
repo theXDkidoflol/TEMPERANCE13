@@ -43,9 +43,9 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-	cloak = /obj/item/clothing/suit/roguetown/armor/longcoat
+	cloak = /obj/item/clothing/cloak/blackguard
 	pants = /obj/item/clothing/under/roguetown/trou/artipants
-	head = /obj/item/clothing/head/roguetown/roguehood/shalal/black
+	head = /obj/item/clothing/head/roguetown/roguehood/pontifex/black
 	mask = /obj/item/clothing/mask/rogue/gasmask/eb_gasmask //Not standard-issue, but it looks scarier. 
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
 	belt = /obj/item/storage/belt/rogue/leather/black/soldier
