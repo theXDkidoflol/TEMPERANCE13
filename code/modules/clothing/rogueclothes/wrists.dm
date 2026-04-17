@@ -92,7 +92,7 @@
 
 /obj/item/clothing/wrists/roguetown/wrappings
 	name = "solar wrappings"
-	slot_flags = ITEM_SLOT_WRISTS
+	slot_flags = ITEM_SLOT_WRISTS|ITEM_SLOT_GLOVES
 	icon_state = "wrappings"
 	item_state = "wrappings"
 	sewrepair = TRUE

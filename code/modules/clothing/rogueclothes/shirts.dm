@@ -43,7 +43,7 @@
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/priest/warpriest
-	color = "#394051"
+	color = "#BBC1F7"
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 	color = CLOTHING_BLACK

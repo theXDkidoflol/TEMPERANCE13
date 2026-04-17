@@ -108,7 +108,7 @@
 	name = "war priest vestments"
 	desc = "Vestments sanctified by the War Priest themselves. Stains of blood line the fabric."
 	icon_state = "priestrobe"
-	color = "#394051"
+	color = "#3A3A71"
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	armor = ARMOR_PADDED	//Equal to gamby
 
