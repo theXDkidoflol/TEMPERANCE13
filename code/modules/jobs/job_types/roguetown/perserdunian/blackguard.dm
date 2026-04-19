@@ -59,14 +59,14 @@
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/mid,
 		/obj/item/grenade/gas/smoke = 2,
-		/obj/item/grenade/gas/poison = 2,
 		/obj/item/ammo_box/speedloader/magnum = 3,
-		/obj/item/bomb/dynamite,
+		/obj/item/bomb/dynamite = 3,
 		/obj/item/bomb/molotov = 2,
+		/obj/item/rogueweapon/knuckles/bronzeknuckles,
 	)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE) 
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE) 
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE) //Same tier as Veteranos
 	H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/revolvers, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
