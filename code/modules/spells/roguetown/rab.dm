@@ -10,7 +10,7 @@
 
 /obj/effect/proc_holder/spell/invoked/blood_heal
 	name = "Blood Congeal"
-	desc = "The simplest of blood magicks. Tap into the coagulative properties of blood to seal deep wounds and staunch bleeding. Capable of healing fractures by rapidly congealing blood into a rigid substance.<br>Standing near puddles of blood will improve the flow."
+	desc = "The simplest of blood magicks. Tap into the coagulative properties of blood to seal deep wounds and staunch bleeding. <br>Standing near puddles of blood will improve flow."
 	overlay_state = "lesserheal"
 	releasedrain = 10
 	chargedrain = 0
@@ -19,10 +19,11 @@
 	warnie = "sydwarning"
 	movement_interrupt = FALSE
 	sound = 'sound/magic/heal.ogg' // needs a custom one
-	invocation_type = "none"
+	invocation = "KNIT!"
+	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/blood
 	antimagic_allowed = TRUE
-	recharge_time = 10 SECONDS
+	recharge_time = 40 SECONDS
 
 /obj/effect/proc_holder/spell/invoked/blood_heal/cast(list/targets, mob/living/user)
 	. = ..()
@@ -61,7 +62,7 @@
 			else
 				no_embeds = TRUE
 			if(no_embeds)
-				target.apply_status_effect(/datum/status_effect/buff/healing, healing)
+				target.apply_status_effect(/datum/status_effect/buff/bloodhealing, bloodhealing)
 			else
 				message_out = span_warning("The wounds tear and rip around the embedded objects!")
 				message_self = span_warning("Agonizing pain shoots through your body as blood tries to sew around the embedded objects!")
@@ -69,7 +70,7 @@
 				playsound(target, 'sound/combat/dismemberment/dismem (2).ogg', 100)
 				H.emote("agony")
 		else
-			target.apply_status_effect(/datum/status_effect/buff/healing, healing)
+			target.apply_status_effect(/datum/status_effect/buff/bloodhealing, bloodhealing)
 		target.visible_message(message_out, message_self)
 		return TRUE
 	revert_cast()
