@@ -78,5 +78,4 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/haste)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stoneskin)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_ARCYNE_T3, TRAIT_GENERIC)
