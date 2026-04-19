@@ -518,6 +518,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Ammo Squire")
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/voltigeur
+	name = "Voltigeur"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/voltigeurlate
+	name = "Voltigeur"
+	icon_state = "arrow"
+	jobspawn_override = list("Voltigeur")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/auxiliarist
 	name = "Auxiliarist"
 	icon_state = "arrow"
