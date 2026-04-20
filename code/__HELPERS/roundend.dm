@@ -133,12 +133,15 @@
 
 	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this war story.</span>")
 	get_end_reason()
-
+	var/list/end_sounds = list(
+    'sound/music/dreamer_is_still_asleep.ogg',
+    'sound/music/roundend/honoraryastronaut.ogg',
+	)
 	var/list/key_list = list()
 	for(var/client/C in GLOB.clients)
 		if(C.mob)
 			SSdroning.kill_droning(C)
-			C.mob.playsound_local(C.mob, 'sound/music/dreamer_is_still_asleep.ogg', 100, FALSE)
+			C.mob.playsound_local(C.mob, pick(end_sounds), 100, FALSE)
 		if(isliving(C.mob) && C.ckey)
 			key_list += C.ckey
 //	if(key_list.len)
