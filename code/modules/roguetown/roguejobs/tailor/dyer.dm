@@ -506,7 +506,7 @@ var/global/list/pridelist = list(
 		if(!inserted)
 			return
 		inserted.add_atom_colour(activecolor, FIXED_COLOUR_PRIORITY)
-		playsound(src, "bubbles", 50, 1)
+		playsound(src, "sound/misc/print.ogg", 40, 1)
 		updateUsrDialog()
 
 	if(href_list["paint_detail"])
@@ -517,7 +517,7 @@ var/global/list/pridelist = list(
 		inserted_item.update_icon()
 		if(inserted_item in GLOB.lordcolor) //Prevent a latejoining duke from changing this color
 			GLOB.lordcolor -= inserted_item
-		playsound(src, "bubbles", 50, 1)
+		playsound(src, "sound/misc/print.ogg", 40, 1)
 		updateUsrDialog()
 
 	if(href_list["paint_altdetail"])
@@ -528,14 +528,13 @@ var/global/list/pridelist = list(
 		inserted_item.update_icon()
 		if(inserted_item in GLOB.lordcolor)
 			GLOB.lordcolor -= inserted_item
-		playsound(src, "bubbles", 50, 1)
+		playsound(src, "sound/misc/print.ogg", 40, 1)
 		updateUsrDialog()
 
 	if(href_list["clear"])
 		if(!inserted)
 			return
 		inserted.remove_atom_colour(FIXED_COLOUR_PRIORITY)
-		playsound(src, "bubbles", 50, 1)
 		updateUsrDialog()
 
 	if(href_list["clear_detail"])
@@ -544,7 +543,6 @@ var/global/list/pridelist = list(
 		var/obj/item/inserted_item = inserted
 		inserted_item.detail_color = "#FFFFFF" //We don't initial() this in case it goes null
 		inserted_item.update_icon()
-		playsound(src, "bubbles", 50, 1)
 		updateUsrDialog()
 
 	if(href_list["clear_altdetail"])
@@ -553,7 +551,6 @@ var/global/list/pridelist = list(
 		var/obj/item/inserted_item = inserted
 		inserted_item.altdetail_color = "#FFFFFF"
 		inserted_item.update_icon()
-		playsound(src, "bubbles", 50, 1)
 		updateUsrDialog()
 
 	if(href_list["eject"])
