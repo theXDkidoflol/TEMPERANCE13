@@ -1306,6 +1306,8 @@
 	pixel_y = 13
 	},
 /obj/effect/landmark/start/armsman,
+/obj/effect/landmark/start/jaegerlate,
+/obj/effect/landmark/start/jaeger,
 /obj/effect/decal/cleanable/dirt/grime/grime4,
 /obj/effect/landmark/start/armsmanlate,
 /turf/open/floor/carpet/royalblack,

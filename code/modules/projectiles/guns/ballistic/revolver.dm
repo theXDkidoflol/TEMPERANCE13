@@ -102,6 +102,7 @@
 	slowdown = 0.15
 	empty_indicator = TRUE
 	fire_sound = REVOLVERSHOT
+	dry_fire_sound = 'sound/combat/ranged/revolver_prime.ogg'
 	load_sound = REVOLVERINSERT
 	recoil = 0.15
 	experimental_inhand = FALSE
@@ -131,9 +132,10 @@
 	spread = 6
 	icon_state = "webley"
 	item_state = "webley"
+	dry_fire_sound = 'sound/combat/ranged/revhammer.ogg'
 	slowdown = 0.15
 	empty_indicator = TRUE
-	fire_sound = REVOLVERSHOT
+	fire_sound = 'sound/combat/ranged/webleyfire.ogg'
 	load_sound = REVOLVERINSERT
 	recoil = 0.30
 	experimental_inhand = FALSE
@@ -147,6 +149,7 @@
 	spread = 8 // with what barrel yo?
 	icon_state = "snubnose"
 	item_state = "snubnose"
+	dry_fire_sound = 'sound/combat/ranged/revhammer.ogg'
 	slowdown = 0.1 // small gun, small slowdown
 	empty_indicator = TRUE
 	fire_sound = REVOLVERSHOT
@@ -161,7 +164,7 @@
 	desc = "A cheap, double barrel shotgun. Usually made by the guy that's holding it."
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/risvon
-	force = 20
+	force = 30
 	spread = 0.5
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -201,10 +204,12 @@
 	icon = 'icons/roguetown/weapons/64guns.dmi'
 	icon_state = "revolvingrifle"
 	item_state = "revolvingrifle"
+	dry_fire_sound = 'sound/combat/ranged/revolver_prime.ogg'
 	slowdown = 0.2 //slower
 	empty_indicator = TRUE
 	fire_sound = REVOLVERSHOT
 	load_sound = REVOLVERINSERT
+	dry_fire_sound = 'sound/combat/ranged/revolver_prime.ogg'
 	recoil = 0.1
 	experimental_inhand = FALSE
 	slot_flags = ITEM_SLOT_BACK

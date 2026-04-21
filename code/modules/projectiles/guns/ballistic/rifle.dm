@@ -196,6 +196,21 @@
 	load_sound = 'sound/combat/ranged/leveractioninsert.ogg'
 	recoil = 0.15
 
+/obj/item/gun/ballistic/rifle/repeater/leverleg
+	name = "'Mare' Baye VII"
+	desc = "A genuine lever action, produced by a WAR MACHINE's outlet, cut down and let in a shelf for who knows how long Fires revolver rounds."
+	icon_state = "sawn-leverchester"
+	item_state = "sawn-leverchester"
+	w_class = WEIGHT_CLASS_SMALL
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/leverleg
+	slowdown = 0.05
+	spread = 0.5
+	slamfire = TRUE
+	pump_sound = 'sound/combat/ranged/leveractioncock.ogg'
+	fire_sound = REVOLVERSHOT
+	load_sound = 'sound/combat/ranged/leveractioninsert.ogg'
+	recoil = 0.15
+
 /obj/item/gun/ballistic/rifle/repeater/rattlesnake
 	name = "BRH 'Rattlesnake'"
 	desc = "A one-shot, breech-loaded rifle gifted by one of Dictate's few allies. Comes with a cloth, tucked in the RIGHT SIDE of the stock."
@@ -260,6 +275,68 @@
 	slowdown = 0.15
 	spread = 0.5
 	pump_sound = 'sound/combat/ranged/riflecock.ogg'
-	fire_sound = 'sound/combat/ranged/newrifle3.ogg'
+	fire_sound = 'sound/combat/ranged/enfieldfire.ogg'
 	load_sound = 'sound/combat/ranged/rifleload.ogg'
 	recoil = 0.15
+
+/obj/item/gun/ballistic/rifle/repeater/lebel
+	name = "SOG 'Regal'"
+	desc = "A Kalarian bolt action rifle, Hold more rounds in the internal magazine, but it's still an utter pain to load."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "lebeler"
+	item_state = "lebeler"
+	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/lebel
+	slowdown = 0.15
+	spread = 0.5
+	pump_sound = 'sound/combat/ranged/riflecock.ogg'
+	fire_sound = 'sound/combat/ranged/enfieldfire.ogg'
+	load_sound = 'sound/combat/ranged/rifleload.ogg'
+	recoil = 0.25
+
+/obj/item/gun/ballistic/rifle/repeater/lewis
+	name = "KR 'Leonard'"
+	desc = "One of the only light machine guns produced the by WAR machine. This one sports a gun shield at the front. There is a tally mark for each man who's held it before you. It's at XII."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "lewisgun"
+	item_state = "lewisgun"
+	item_flags = SLOWS_WHILE_IN_HAND
+	can_parry = TRUE
+	armor = ARMOR_SHIELD
+	possible_item_intents = list(, SHIELD_BLOCK, SHIELD_SMASH)
+	mag_type = /obj/item/ammo_box/magazine/lewis
+	slowdown = 2 //I'M THE JUGGAHNAUT BAYBEE
+	force = 40 //if someone hits you with a fucking lewis gun, you're gonna have a bad time
+	spread = 3
+	pump_sound = 'sound/combat/ranged/riflecock.ogg'
+	fire_sound = LEWISSHOT
+	load_sound = 'sound/combat/ranged/rifleload.ogg'
+	recoil = 0.15
+	semi_auto = TRUE
+	burst = 3
+	wdefense = 11
+	max_integrity = 150
+	possible_item_intents = list(
+		/datum/intent/shoot/rifle,
+		/datum/intent/arc/rifle,
+		/datum/intent/shield/smash,
+		/datum/intent/shield/block,
+		INTENT_GENERIC,
+		)
+
+/obj/item/gun/ballistic/rifle/repeater/dp47
+	name = "RSV 'Redeemer'"
+	desc = "A light machine gun, produced by the WAR MACHINE. Fires rifle rounds at a high rate of fire, with a dinner plate on top of it. It's one of a kind."
+	icon = 'icons/roguetown/weapons/64guns.dmi'
+	icon_state = "dp47"
+	item_state = "dp47"
+	mag_type = /obj/item/ammo_box/magazine/dp47
+	item_flags = SLOWS_WHILE_IN_HAND
+	slowdown = 0.7
+	force = 40
+	spread = 2
+	pump_sound = 'sound/combat/ranged/riflecock.ogg'
+	fire_sound = DP47SHOT
+	load_sound = 'sound/combat/ranged/rifleload.ogg'
+	recoil = 0.15
+	semi_auto = TRUE
+	burst = 2

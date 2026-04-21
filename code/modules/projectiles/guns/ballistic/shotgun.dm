@@ -158,7 +158,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/auto8
 	slowdown = 0.15
 	spread = 0.5
-	fire_sound = SHOTGUNSHOT
+	fire_sound = AUTOSGSHOT
 	pump_sound = 'sound/combat/ranged/patiencecock.ogg'
 	recoil = 0.15
 	load_sound = SHOTGUNINSERT
@@ -173,7 +173,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/auto5
 	slowdown = 0.15
 	spread = 0.5
-	fire_sound = SHOTGUNSHOT
+	fire_sound = AUTOSGSHOT
 	pump_sound = 'sound/combat/ranged/patiencecock.ogg'
 	recoil = 0.15
 	load_sound = SHOTGUNINSERT
@@ -183,7 +183,7 @@
 	name = "MNZ 'Hare'"
 	desc = "Somewhat similar to the Ark. It's a compact shotgun that can fit inside your bag - how neat!"
 	icon = 'icons/roguetown/weapons/64guns.dmi'
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	icon_state = "levershotgun"
 	item_state = "levershotgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/levershotgun
