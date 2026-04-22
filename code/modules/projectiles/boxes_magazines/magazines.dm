@@ -40,7 +40,7 @@
     max_ammo = 9
     multiload = 1
     icon_state = "lugermag"
-	sellprice = 10
+    sellprice = 10
 
 /obj/item/ammo_box/magazine/cfmag
     name = "Certain Fury magazine"
@@ -51,7 +51,7 @@
     max_ammo = 15
     multiload = 1
     icon_state = "cfmag"
-	sellprice = 14
+    sellprice = 14
 
 //hmg 
 
@@ -124,7 +124,7 @@
 
 /obj/item/ammo_box/magazine/flamer
 	name = "fuel tank"
-	desc = "To see a man burn to death is a humbling sight. You consider yourself very humbled."
+	desc = "To see a man burn to death is a humbling sight. You consider yourself a humble person, indeed."
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	max_ammo = 200
 	multiload = 1

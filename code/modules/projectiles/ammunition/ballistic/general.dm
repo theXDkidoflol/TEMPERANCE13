@@ -72,7 +72,7 @@
     caliber = "a380"
     projectile_type = /obj/projectile/bullet/a380
     bullet_type = RIFLECASING
-	sellprice = 1
+    sellprice = 1
 
 /obj/item/ammo_casing/a45lc
 	name = ".45 Long Colt bullet casing"

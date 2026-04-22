@@ -196,4 +196,4 @@
 	pump_sound = 'sound/combat/ranged/leveractioncock.ogg'
 	recoil = 0.15
 	load_sound = SHOTGUNINSERT
-	sellprice = 
+	sellprice = 42

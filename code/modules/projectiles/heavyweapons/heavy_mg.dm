@@ -297,7 +297,6 @@
 	icon_state = "utes"
 	mag_type = /obj/item/ammo_box/magazine/hmg/a303
 	fire_sound = HMGGENERICSHOT
-	sellvalue = 180
 
 /obj/item/gun/ballistic/heavy_mg/mark1/update_icon()
 	..()
@@ -312,7 +311,6 @@
 	icon_state = "spandau"
 	mag_type = /obj/item/ammo_box/magazine/hmg/a762x59
 	fire_sound = HMGGENERICSHOT
-	sellvalue = 180
 
 /obj/item/gun/ballistic/heavy_mg/spandau/update_icon()
 	..()
@@ -332,7 +330,6 @@
 	mag_type = /obj/item/ammo_box/magazine/hmg/a50d
 	fire_sound = HMGM2SHOT
 	burst = 2
-	sellvalue = 220
 
 /obj/item/gun/ballistic/heavy_mg/m2/update_icon()
 	..()

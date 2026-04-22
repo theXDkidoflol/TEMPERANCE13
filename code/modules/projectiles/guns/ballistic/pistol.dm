@@ -177,7 +177,7 @@
     recoil = 0.15
     semi_auto = TRUE
     slot_flags = ITEM_SLOT_HIP
-	sellprice = 64
+    sellprice = 64
 
 /obj/item/gun/ballistic/rifle/repeater/offiseroluger
     name = "ZOM 'Galinha'"
@@ -196,7 +196,7 @@
     recoil = 0.15
     semi_auto = TRUE
     slot_flags = ITEM_SLOT_HIP
-	sellprice = 48
+    sellprice = 48
 
 /obj/item/gun/ballistic/rifle/repeater/artyluger
     name = "KR 'Preacher'"
@@ -214,7 +214,7 @@
     eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
     recoil = 0.05 //stocked pistol
     semi_auto = TRUE
-	sellprice = 90
+    sellprice = 90
 
 /obj/item/gun/ballistic/rifle/repeater/infiltrator
     name = "KR 'Infiltrator'"
@@ -233,7 +233,7 @@
     recoil = 0.15
     semi_auto = TRUE
     slot_flags = ITEM_SLOT_HIP
-	sellprice = 20 //assume people are going to be selling these empty
+    sellprice = 20 //assume people are going to be selling these empty
 
 /obj/item/gun/ballistic/rifle/repeater/mpcolt
     name = "MP 'Certain Fury'"
@@ -252,7 +252,7 @@
     eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
     recoil = 0.05 //stocked pistol
     semi_auto = TRUE
-	sellprice = 64
+    sellprice = 64
 
 /obj/item/gun/ballistic/rifle/repeater/risvocarb
     name = "KAR 'Marland' Pistol Carbine"
@@ -271,4 +271,4 @@
     eject_sound = 'sound/combat/ranged/pistol_magout.ogg'
     recoil = 0.05 //stocked pistol
     semi_auto = TRUE
-	sellprice = 64
+    sellprice = 64

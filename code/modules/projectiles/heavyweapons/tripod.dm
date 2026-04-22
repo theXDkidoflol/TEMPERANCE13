@@ -92,18 +92,15 @@
 	icon_state = "spandau-tripod"
 	id_g = "spd"
 	need_type = /obj/item/gun/ballistic/heavy_mg/spandau
-	sellvalue = 20
 
 /obj/item/mg_tripod/mark1
 	name = "'Mark 1' tripod"
 	icon_state = "mark1-tripod"
 	id_g = "mk1"
 	need_type = /obj/item/gun/ballistic/heavy_mg/mark1
-	sellvalue = 20
 
 /obj/item/mg_tripod/m2
 	name = "M2 tripod"
 	icon_state = "nato-tripod" //  fix //FIX! ~JTB
 	id_g = "mbr"
 	need_type = /obj/item/gun/ballistic/heavy_mg/m2
-	sellvalue = 30
