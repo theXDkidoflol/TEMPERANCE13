@@ -488,6 +488,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Armsman")
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/jaeger
+	name = "Jaeger"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/jaegerlate
+	name = "Jaeger"
+	icon_state = "arrow"
+	jobspawn_override = list("Jaeger")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/rook
 	name = "Rook"
 	icon_state = "arrow"
@@ -495,7 +505,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/rooklate
 	name = "Rook"
 	icon_state = "arrow"
-	jobspawn_override = list("Rook")
+	jobspawn_override = list("Rook", "Blackguard")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/ammosquire
@@ -506,6 +516,16 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Ammo Squire"
 	icon_state = "arrow"
 	jobspawn_override = list("Ammo Squire")
+	delete_after_roundstart = FALSE
+
+/obj/effect/landmark/start/voltigeur
+	name = "Voltigeur"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/voltigeurlate
+	name = "Voltigeur"
+	icon_state = "arrow"
+	jobspawn_override = list("Voltigeur")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/auxiliarist

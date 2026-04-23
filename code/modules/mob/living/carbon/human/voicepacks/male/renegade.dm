@@ -1,0 +1,34 @@
+/datum/voicepack/male/renegade/get_sound(soundin, modifiers)
+	var/used
+	switch(soundin)
+		if("chuckle")
+			used = list('sound/vo/male/renegade/chuckle (1).ogg',)
+		if("embed")
+			used = list('sound/vo/male/young/embed (1).ogg','sound/vo/male/young/embed (2).ogg')
+		if("sigh")
+			used = list('sound/vo/male/zeth/sigh (1).ogg','sound/vo/male/zeth/sigh (2).ogg','sound/vo/male/zeth/sigh (3).ogg')
+		if("grumble")
+			used = list('sound/vo/male/zeth/grumble (1).ogg','sound/vo/male/zeth/grumble (2).ogg')
+		if("scream")
+			used = 'sound/vo/male/renegade/scream (1).ogg'
+		if("laugh")
+			used = list('sound/vo/male/renegade/laugh (1).ogg', 'sound/vo/male/renegade/laugh (2).ogg')
+		if("pain")
+			used = 'sound/vo/male/renegade/death.ogg'
+		if("cough")
+			used = list('sound/vo/male/renegade/cough (1).ogg','sound/vo/male/renegade/cough (2).ogg')
+		if("whistle")
+			used = list('sound/vo/male/renegade/cheeki-breeki.ogg')
+		if("warcry")
+			used = list('sound/vo/male/renegade/yeehaw.mp3')
+		if("paincrit")
+			used = list('sound/vo/male/young/paincrit (1).ogg','sound/vo/male/young/paincrit (2).ogg','sound/vo/male/young/paincrit (3).ogg')
+		if("painscream")
+			used = list('sound/vo/male/renegade/painscream (1).ogg','sound/vo/male/wilhelm_scream.ogg')
+		if("rage")
+			used = list('sound/vo/male/knight/rage (1).ogg','sound/vo/male/knight/rage (2).ogg','sound/vo/male/knight/rage (3).ogg','sound/vo/male/knight/rage (4).ogg','sound/vo/male/knight/rage (5).ogg','sound/vo/male/knight/rage (6).ogg')
+	if(!used)
+		used = ..(soundin, modifiers)
+	return used
+
+//kill everyone

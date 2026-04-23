@@ -214,14 +214,16 @@
 #define GRANDKNIGHT (1<<1) // heaviest armor in the game - very tanky - melee only - consider adding a shield
 #define WARPRIEST (1<<2) // rab worshipper support role, uses blood magic, has a few offensive spells with a few support ones too
 #define KNIGHTCOMMANDER (1<<3) //better armor + sawn down lever-action & a sword
-#define AUXILIARIST	(1<<4) //support role - same w/ servico
-#define ARMSMAN	(1<<5) //standard soldier w/ a rifle
-#define ROOK (1<<6) // terdun machine gunner
-#define AMMOSQUIRE (1<<7) // terdun ammo bearer
-#define CHIRURGEON (1<<8)
-#define PARTISAN (1<<9)
-#define ENVOY (1<<10)
-#define RADIOTROOPER (1<<11)
+#define VOLTIGEUR (1<<4) //high speed shotgun flanker, with recon potential to boot
+#define BLACKGUARD (1<<5) //trench raider - specialized in close combat
+#define AUXILIARIST	(1<<6) //support role - same w/ servico
+#define ARMSMAN	(1<<7) //standard soldier w/ a rifle
+#define ROOK (1<<8) // terdun machine gunner
+#define AMMOSQUIRE (1<<9) // terdun ammo bearer
+#define CHIRURGEON (1<<10)
+#define PARTISAN (1<<11)
+#define ENVOY (1<<12)
+#define RADIOTROOPER (1<<13)
 
 #define RISVON	(1<<13)
 
@@ -275,12 +277,14 @@
 #define JDO_GRANDKNIGHT 1.1
 #define JDO_WARPRIEST 1.2
 #define JDO_KNIGHTCOMMANDER 1.3
-#define JDO_AUXILIARIST 1.4
-#define JDO_ARMSMAN 1.5
-#define JDO_ROOK 1.6
-#define JDO_AMMOSQUIRE 1.7
-#define JDO_CHIRURGEON 1.8
-#define JDO_PARTISAN 1.9
+#define JDO_VOLTIGEUR 1.4
+#define JDO_BLACKGUARD 1.41
+#define JDO_AUXILIARIST 1.5
+#define JDO_ARMSMAN 1.6
+#define JDO_ROOK 1.7
+#define JDO_AMMOSQUIRE 1.8
+#define JDO_CHIRURGEON 1.9
+#define JDO_PARTISAN 1.91
 #define JDO_ENVOY 1.92
 #define JDO_RADIOTROOPER 1.93
 
@@ -316,6 +320,8 @@
 	/datum/job/roguetown/warpriest,\
 	/datum/job/roguetown/grandknight,\
 	/datum/job/roguetown/knightcommander,\
+	/datum/job/roguetown/voltigeur,\
+	/datum/job/roguetown/blackguard,\
 	/datum/job/roguetown/auxiliar,\
 	/datum/job/roguetown/armsman,\
 	/datum/job/roguetown/chirurgeon,\

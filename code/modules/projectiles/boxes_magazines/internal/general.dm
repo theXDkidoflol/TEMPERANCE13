@@ -16,14 +16,29 @@
 	max_ammo = 4
 	multiload = 0
 
+/obj/item/ammo_box/magazine/internal/boltaction/lebel
+	name = "Lebel internal magazine"
+	desc = "This should NOT be here."
+	ammo_type = /obj/item/ammo_casing/a762
+	caliber = "a762"
+	max_ammo = 8
+	multiload = 0
+
 /obj/item/ammo_box/magazine/internal/boltaction/leverchester
 	name = "WTF."
 	desc = "YOU SHOULD NOT BE SEEING THIS!!!"
 	ammo_type = /obj/item/ammo_casing/a44
 	caliber = "a44"
-	max_ammo = 6
+	max_ammo = 9
 	multiload = 0
 
+/obj/item/ammo_box/magazine/internal/boltaction/leverleg
+	name = "WTF."
+	desc = "YOU SHOULD NOT BE SEEING THIS!!!"
+	ammo_type = /obj/item/ammo_casing/a44
+	caliber = "a44"
+	max_ammo = 7
+	multiload = 0
 
 /obj/item/ammo_box/magazine/internal/boltaction/rattlesnake
 	name = "snake internal mag."
@@ -99,6 +114,14 @@
 	max_ammo = 6
 	multiload = 1
 
+/obj/item/ammo_box/magazine/internal/revolver/flaregun
+	name = "Flare Gun internal magazine"
+	desc = "You should probably tell an admin."
+	ammo_type = /obj/item/ammo_casing/flare
+	caliber = "flare"
+	max_ammo = 1
+	multiload = 0
+
 //pistols
 
 /obj/item/ammo_box/magazine/internal/boltaction/pistol
@@ -140,3 +163,5 @@
 	caliber = "a9mm"
 	max_ammo = 21
 	multiload = 1
+
+

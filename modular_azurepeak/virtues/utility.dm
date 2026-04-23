@@ -11,11 +11,6 @@
 	desc = "Some terrible incident colours my past, and now, I feel nothing."
 	added_traits = list(TRAIT_NOMOOD)
 
-/datum/virtue/utility/light_steps
-	name = "Light Steps"
-	desc = "Years of skulking about have left my steps quiet, and my hunched gait quicker."
-	added_traits = list(TRAIT_LIGHT_STEP)
-
 /datum/virtue/utility/failed_squire
 	name = "Failed Squire"
 	desc = "I was once a squire in training, but failed to achieve knighthood. Though my dreams of glory were dashed, I retained my knowledge of equipment maintenance and repair, including how to polish arms and armor."
