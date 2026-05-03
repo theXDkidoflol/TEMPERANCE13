@@ -1,5 +1,11 @@
 /mob/living/carbon/Initialize()
 	. = ..()
+
+	pain_threshold = STAEND * 10
+
+	if(HAS_TRAIT(src, TRAIT_NOPAIN))
+		pain_threshold = 250
+
 	create_reagents(1000)
 	update_body_parts() //to update the carbon's new bodyparts appearance
 	GLOB.carbon_list += src
@@ -549,6 +555,7 @@
 
 /mob/living/carbon
 	var/nausea = 0
+	var/bleeding_tier = 0
 
 /mob/living/carbon/proc/add_nausea(amt)
 	nausea = clamp(nausea + amt, 0, 300)

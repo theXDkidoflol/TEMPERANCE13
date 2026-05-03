@@ -93,6 +93,18 @@
 	/// Visual features of the bodypart, such as hair and accessories
 	var/list/bodypart_features
 
+	/// Whether the bodypart has unlimited bleeding.
+	var/unlimited_bleeding = FALSE
+
+	/// Cached variable that reflects how much bleeding our wounds are applying to the limb. Handled inside each individual wound.
+	var/bleeding = 0
+
+	/// Is the limb flagged for two-stage death handling? (aka, decaps will instantly kill first, THEN remove the head on second apply)
+	var/two_stage_death = FALSE
+	/// Has the limb been marked as having suffered a two-stage death flag?
+	var/grievously_wounded = FALSE
+
+
 	grid_width = 32
 	grid_height = 64
 
@@ -296,6 +308,7 @@
 	var/new_max_damage = initial(max_damage) * (owner.STACON / 10)
 	if(new_max_damage != old_max_damage)
 		max_damage = new_max_damage
+
 
 //Applies brute and burn damage to the organ. Returns 1 if the damage-icon states changed at all.
 //Damage will not exceed max_damage using this proc

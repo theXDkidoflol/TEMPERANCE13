@@ -210,6 +210,7 @@
 			while(newamt > 20)
 				newamt--
 				BUFEND++
+			pain_threshold += amt * 10
 			STAEND = newamt
 
 		if("speed")

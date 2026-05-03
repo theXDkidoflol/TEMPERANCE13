@@ -140,8 +140,8 @@
 /datum/status_effect/debuff/bleeding
 	id = "bleedingt1"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/bleedingt1
-	effectedstats = list("speed" = -1)
-	duration = 100
+	effectedstats = list(STATKEY_SPD = -1)
+	duration = -1
 
 /atom/movable/screen/alert/status_effect/debuff/bleedingt1
 	name = "Dizzy"
@@ -151,8 +151,8 @@
 /datum/status_effect/debuff/bleedingworse
 	id = "bleedingt2"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/bleedingt2
-	effectedstats = list("strength" = -1, "speed" = -2)
-	duration = 100
+	effectedstats = list(STATKEY_STR = -1, STATKEY_SPD = -2)
+	duration = -1
 
 /atom/movable/screen/alert/status_effect/debuff/bleedingt2
 	name = "Faint"
@@ -162,8 +162,8 @@
 /datum/status_effect/debuff/bleedingworst
 	id = "bleedingt3"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/bleedingt3
-	effectedstats = list("strength" = -3, "speed" = -4)
-	duration = 100
+	effectedstats = list(STATKEY_STR = -3, STATKEY_SPD = -4)
+	duration = -1
 
 /atom/movable/screen/alert/status_effect/debuff/bleedingt3
 	name = "Drained"
@@ -493,3 +493,7 @@
 /datum/status_effect/debuff/no_coom_cheating/on_remove()
 	. = ..()
 	REMOVE_TRAIT(owner, TRAIT_UNSATISFIED, id)
+
+/datum/status_effect/debuff/dazed/skullshatter
+	effectedstats = list(STATKEY_PER = -1, STATKEY_INT = -1, STATKEY_SPD = -1)
+	duration = -1

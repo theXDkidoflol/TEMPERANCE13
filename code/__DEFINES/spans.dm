@@ -165,3 +165,7 @@
 #define span_quoteauthor(str) ("<span class='quoteauthor'>" + str + "</span>")
 #define span_roundquote(str) ("<span class='roundquote'>" + str + "</span>")
 #define span_subtle(str) ("<span class ='subtle'>"+ str +"</span>")
+#define span_combatprimary(str) ("<span class='combatprimary'>" + str + "</span>")
+#define span_combatsecondary(str) ("<span class='combatsecondary'>" + str + "</span>")
+#define span_combatsecondarybp(str) ("<span class='combatsecondarybodypart'>" + str + "</span>")
+#define span_combatsecondarysmall(str) ("<span class ='combatsecondarysmall'>" + str + "</span>")

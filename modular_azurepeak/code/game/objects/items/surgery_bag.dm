@@ -23,7 +23,7 @@
 		/obj/item/rogueweapon/surgery/bonesetter,
 		/obj/item/rogueweapon/surgery/cautery,
 		/obj/item/rogueweapon/surgery/hammer,
-		/obj/item/natural/bundle/cloth,
+		/obj/item/natural/bundle/cloth/bandage/full,
 		/obj/item/needle
 	)
 
@@ -38,7 +38,7 @@
 	/obj/item/rogueweapon/surgery/retractor,
 	/obj/item/rogueweapon/surgery/bonesetter,
 	/obj/item/rogueweapon/surgery/cautery,
-	/obj/item/natural/bundle/cloth,
+	/obj/item/natural/bundle/cloth/bandage/full,
 	/obj/item/rogueweapon/surgery/hammer,
 	/obj/item/needle/pestra //Gets the special needle!
 	)
@@ -50,5 +50,5 @@
 /obj/item/storage/belt/rogue/pouch/medicine
 	populate_contents = list(
 	/obj/item/needle,
-	/obj/item/natural/bundle/cloth
+	/obj/item/natural/bundle/cloth/bandage/full
 	)

@@ -99,6 +99,8 @@
 #define CRAWLING_ADD_SLOWDOWN 7
 //slowdown for dislocated limbs
 #define DISLOCATED_ADD_SLOWDOWN 2
+//slowdown for fractured limbs
+#define FRACTURED_ADD_SLOWDOWN 3
 
 //Attack types for checking shields/hit reactions
 #define MELEE_ATTACK 1
@@ -211,6 +213,7 @@
 #define BCLASS_BURN			"charring"
 #define BCLASS_PEEL			"peel"
 #define BCLASS_EFFECT		"effect"
+#define BCLASS_PUNISH		"punish"
 
 //Material class (what material is striking)
 #define MCLASS_GENERIC		1
@@ -358,3 +361,35 @@ GLOBAL_LIST_INIT(shove_disarming_types, typecacheof(list(
 #define BLUNT_DEFAULT_PENFACTOR		-100
 
 #define UNARMED_DAMAGE_DEFAULT		12
+
+/*
+Medical defines
+*/
+#define ARTERY_LIMB_BLEEDRATE 20	//This is used as a reference point for dynamic wounds, so it's better off as a define.
+#define CONSTITUTION_BLEEDRATE_MOD 0.05	//How much slower we'll be bleeding for every CON point. 0.1 = 10% slower.
+#define CONSTITUTION_BLEEDRATE_CAP 20	//The CON value up to which we get a bleedrate reduction.
+
+#define WILLPOWER_STARTING_STAMINA 135	//Starting stamina (green bar) value. Before major changes this would represent Expert Athletics + ~11.5 WIL 
+#define WILLPOWER_MODIFIER	5	//How much stamina (flat value) we gain (or lose) for every WIL above / below 10.
+
+#define SPEED_MOVSPD_MOD 0.075	//Multiplicative modifier for our speed, per point (for both <10 and >10 values)
+
+/*
+	Critical Resistance Defines 
+*/
+// Normal classes are guaranteed 4 resists, NPC 1, noblood / revenant 1
+#define CRIT_RESISTANCE_STACKS_PLAYER 4
+#define CRIT_RESISTANCE_STACKS_NPC 1
+#define CRIT_RESISTANCE_STACKS_OP 1 // Noblood / Revenant etc.
+#define CRIT_RESISTANCE_EFFECTIVE_BLEEDRATE 0.5 // How much CR reduce bleedrate by
+#define CRIT_RESISTANCE_TIMER_CD 30 SECONDS // Cooldown between guaranteed CR procs. DOES NOT APPLY TO DISMEMBERMENT.
+
+#define BLOOD_RESISTANCE_EFFECTIVE_BLEEDRATE 0.5
+
+/*
+ Misc. Category. Spin it out if needed
+*/
+
+#define CRIT_DISMEMBER_DAMAGE_THRESHOLD 0.9 // 90% damage threshold for dismemberment / crit
+#define STANDING_DECAP_GRACE_PERIOD 2 SECONDS // Time after falling prone where you still count as standing for decap purpose
+#define INT_NOISE_DELAY 1 SECONDS

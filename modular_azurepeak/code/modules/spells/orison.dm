@@ -315,3 +315,26 @@
 		return water_moisten
 	else
 		to_chat(user, span_info("I'll need to find a container that can hold water."))
+
+/datum/reagent/water/medicine
+	name = "Panaceaic Medicine"
+	description = "A gift of the LIFE MACHINE, this medicine is valuable to help mend wounds- but it certainly tastes bad."
+	color = "#428b42"
+	taste_description = "nauseatingly bitter"
+	metabolization_rate = REAGENTS_METABOLISM
+
+/datum/reagent/water/medicine/on_mob_life(mob/living/carbon/M)
+	if(volume >= 50)
+		M.reagents.remove_reagent(/datum/reagent/water/medicine, 2) // no more than 1 large bottle at a time
+	if(volume > 0.99)
+		M.adjustBruteLoss(-0.5 * REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustFireLoss(-0.5 * REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustOxyLoss(-0.5 * REAGENTS_EFFECT_MULTIPLIER, 0)
+		M.adjustToxLoss(-0.5 * REAGENTS_EFFECT_MULTIPLIER, 0)
+		for(var/datum/reagent/R in M.reagents.reagent_list)
+			if(R.harmful)
+				holder.remove_reagent(R.type, 0.2 * REAGENTS_EFFECT_MULTIPLIER)
+		var/list/wCount = M.get_wounds()
+		if(wCount.len > 0)
+			M.heal_wounds(2 * REAGENTS_EFFECT_MULTIPLIER)
+		..()

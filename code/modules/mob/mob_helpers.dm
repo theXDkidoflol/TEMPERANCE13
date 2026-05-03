@@ -985,3 +985,21 @@
 	if(!HAS_TRAIT_FROM(user.client, TRAIT_AI_ACCESS, ADMIN_TRAIT)) // Do they have it enabled?
 		return FALSE
 	return TRUE
+
+/proc/bodypart_to_zone(part)
+	var/obj/item/bodypart/B = part
+	switch(B::type)
+		if(/obj/item/bodypart/chest)
+			return BODY_ZONE_CHEST
+		if(/obj/item/bodypart/head)
+			return BODY_ZONE_HEAD
+		if(/obj/item/bodypart/l_arm)
+			return BODY_ZONE_L_ARM
+		if(/obj/item/bodypart/r_arm)
+			return BODY_ZONE_R_ARM
+		if(/obj/item/bodypart/l_leg)
+			return BODY_ZONE_L_LEG
+		if(/obj/item/bodypart/r_leg)
+			return BODY_ZONE_R_LEG
+		else
+			return BODY_ZONE_CHEST
