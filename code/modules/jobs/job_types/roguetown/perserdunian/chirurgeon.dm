@@ -71,3 +71,4 @@
 	H.change_stat("speed", 2)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
+	ADD_TRAIT(H, TRAIT_MEDICINE_EXPERT, TRAIT_GENERIC)

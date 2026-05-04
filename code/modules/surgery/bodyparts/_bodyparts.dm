@@ -51,6 +51,7 @@
 	var/species_icon = ""
 
 	var/animal_origin = null //for nonhuman bodypart (e.g. monkey)
+	var/prosthetic_prefix = "pr" // for unique prosthetic icons on mob
 	var/dismemberable = 1 //whether it can be dismembered with a weapon.
 	var/disableable = 1
 
@@ -85,6 +86,7 @@
 	var/skeletonized = FALSE
 
 	var/fingers = TRUE
+	var/organ_slowdown = 0 // Its here because this is first shared definition between two leg organ paths
 	var/is_prosthetic = FALSE
 
 	/// Visaul markings to be rendered alongside the bodypart
@@ -104,11 +106,13 @@
 	/// Has the limb been marked as having suffered a two-stage death flag?
 	var/grievously_wounded = FALSE
 
-
 	grid_width = 32
 	grid_height = 64
 
 	resistance_flags = FLAMMABLE
+
+/obj/item/bodypart/proc/operator""()
+	return "\proper"+name
 
 /obj/item/bodypart/proc/adjust_marking_overlays(var/list/appearance_list)
 	return
@@ -117,6 +121,8 @@
 	var/list/appearance_list = list()
 //	var/specific_layer = aux ? aux_layer : BODYPARTS_LAYER
 	var/specific_layer = aux_layer ? aux_layer : BODYPARTS_LAYER
+	if((specific_layer == HANDS_PART_LAYER) && (human_owner.wear_shirt)) // Arms snowflake check
+		return appearance_list
 	var/specific_render_zone = aux ? aux_zone : body_zone
 	for(var/key in specific_markings)
 		var/color = specific_markings[key]
@@ -150,6 +156,12 @@
 /obj/item/bodypart/grabbedintents(mob/living/user, precise)
 	return list(/datum/intent/grab/move, /datum/intent/grab/twist, /datum/intent/grab/smash)
 
+/obj/item/bodypart/l_arm/grabbedintents(mob/living/user, precise)
+	return list(/datum/intent/grab/move, /datum/intent/grab/twist, /datum/intent/grab/smash)
+
+/obj/item/bodypart/r_arm/grabbedintents(mob/living/user, precise)
+	return list(/datum/intent/grab/move, /datum/intent/grab/twist, /datum/intent/grab/smash)
+
 /obj/item/bodypart/chest/grabbedintents(mob/living/user, precise)
 	if(precise == BODY_ZONE_PRECISE_GROIN)
 		return list(/datum/intent/grab/move, /datum/intent/grab/twist, /datum/intent/grab/shove)
@@ -163,13 +175,16 @@
 		QDEL_NULL(bandage)
 	for(var/datum/wound/wound as anything in wounds)
 		qdel(wound)
+	if(embedded_objects && length(embedded_objects))
+		for(var/obj/item/embedded as anything in embedded_objects)
+			embedded_objects -= embedded
+			if(!QDELETED(embedded))
+				qdel(embedded)
+		embedded_objects = null
 	return ..()
 
 /obj/item/bodypart/onbite(mob/living/carbon/human/user)
 	if((user.mind && user.mind.has_antag_datum(/datum/antagonist/zombie)) || istype(user.dna.species, /datum/species/werewolf))
-		if(user.has_status_effect(/datum/status_effect/debuff/silver_curse))
-			to_chat(user, span_notice("My power is weakened, I cannot heal!"))
-			return
 		if(do_after(user, 50, target = src))
 			user.visible_message(span_warning("[user] consumes [src]!"),\
 							span_notice("I consume [src]!"))
@@ -249,7 +264,7 @@
 		playsound(get_turf(src), 'sound/blank.ogg', 50, TRUE, -1)
 	pixel_x = rand(-3, 3)
 	pixel_y = rand(-3, 3)
-	if(!skeletonized)
+	if(!skeletonized && owner && !(NOBLOOD in owner.dna?.species?.species_traits))
 		new /obj/effect/decal/cleanable/blood/splatter(get_turf(src))
 
 //empties the bodypart from its organs and other things inside it
@@ -309,7 +324,6 @@
 	if(new_max_damage != old_max_damage)
 		max_damage = new_max_damage
 
-
 //Applies brute and burn damage to the organ. Returns 1 if the damage-icon states changed at all.
 //Damage will not exceed max_damage using this proc
 //Cannot apply negative damage
@@ -364,7 +378,12 @@
 			. = TRUE
 	consider_processing()
 	update_disabled()
-	return update_bodypart_damage_state() || .
+	. = update_bodypart_damage_state() || .
+	if(owner)
+		var/datum/hud/hud_used = owner.hud_used
+		if(hud_used?.zone_select)
+			hud_used.zone_select.update_limb(body_zone)
+	return .
 
 //Heals brute and burn damage for the organ. Returns 1 if the damage-icon states changed at all.
 //Damage cannot go below zero.
@@ -386,7 +405,12 @@
 	consider_processing()
 	update_disabled()
 	cremation_progress = min(0, cremation_progress - ((brute_dam + burn_dam)*(100/max_damage)))
-	return update_bodypart_damage_state()
+	. = update_bodypart_damage_state()
+	if(owner)
+		var/datum/hud/hud_used = owner.hud_used
+		if(hud_used?.zone_select)
+			hud_used.zone_select.update_limb(body_zone)
+	return .
 
 //Returns total damage.
 /obj/item/bodypart/proc/get_damage(include_stamina = FALSE)
@@ -560,6 +584,17 @@
 
 	return bodypart_organs
 
+/obj/item/bodypart/proc/get_visible_organs()
+	if(!owner)
+		return FALSE
+
+	var/list/bodypart_organs
+	for(var/obj/item/organ/organ_check as anything in owner.visible_organs) //internal organs inside the dismembered limb are dropped.
+		if(check_zone(organ_check.zone) == body_zone)
+			LAZYADD(bodypart_organs, organ_check) // this way if we don't have any, it'll just return null
+
+	return bodypart_organs
+
 //Gives you a proper icon appearance for the dismembered limb
 /obj/item/bodypart/proc/get_limb_icon(dropped, hideaux = FALSE)
 	icon_state = "" //to erase the default sprite, we're building the visual aspects of the bodypart through overlays alone.
@@ -627,7 +662,7 @@
 
 	else
 		limb.icon = species_icon
-		limb.icon_state = "pr_[body_zone]"
+		limb.icon_state = "[prosthetic_prefix]_[body_zone]"
 		if(aux_zone)
 			if(!hideaux)
 				aux = image(limb.icon, "pr_[aux_zone]", -aux_layer, image_dir)
@@ -639,13 +674,13 @@
 		override_color = SKIN_COLOR_ROT
 	if(is_organic_limb && should_draw_greyscale && !skeletonized)
 		var/draw_color =  mutation_color || species_color || skin_tone
-		if(rotted || (owner && HAS_TRAIT(owner, TRAIT_ROTMAN)))
+		if(rotted || (owner && HAS_TRAIT(owner, TRAIT_ROTMAN) && !owner.mind))
 			draw_color = SKIN_COLOR_ROT
 		if(draw_color)
 			limb.color = "#[draw_color]"
 			if(aux_zone && !hideaux)
 				aux.color = "#[draw_color]"
-	
+
 	var/draw_organ_features = TRUE
 	var/draw_bodypart_features = TRUE
 	if(owner && owner.dna)
@@ -654,24 +689,26 @@
 			draw_organ_features = FALSE
 		if(NO_BODYPART_FEATURES in owner_species.species_traits)
 			draw_bodypart_features = FALSE
-	
+
 	// Markings overlays
-	if(!skeletonized)
+	if(!skeletonized && draw_bodypart_features)
 		var/list/marking_overlays = get_markings_overlays(override_color)
 		if(marking_overlays)
 			. += marking_overlays
-	
+
 	// Organ overlays
-	if(!skeletonized && draw_organ_features)
-		for(var/obj/item/organ/organ as anything in get_organs())
-			if(!organ.is_visible())
-				continue
+	if(draw_organ_features)
+		for(var/obj/item/organ/organ as anything in get_visible_organs())
+			if(skeletonized)
+				var/should_draw = FALSE
+				if(!should_draw)
+					continue
 			var/mutable_appearance/organ_appearance = organ.get_bodypart_overlay(src)
 			if(organ_appearance)
 				. += organ_appearance
-	
+
 	// Feature overlays
-	if(!skeletonized && draw_bodypart_features)
+	if(draw_bodypart_features)
 		for(var/datum/bodypart_feature/feature as anything in bodypart_features)
 			var/overlays = feature.get_bodypart_overlay(src)
 			if(!overlays)
@@ -737,7 +774,7 @@
 	desc = ""
 	icon_state = "default_human_l_arm"
 	attack_verb = list("slapped", "punched")
-	max_damage = 100
+	max_damage = 200
 	max_stamina_damage = 50
 	body_zone = BODY_ZONE_L_ARM
 	body_part = ARM_LEFT
@@ -775,7 +812,7 @@
 	if(owner.hud_used)
 		var/atom/movable/screen/inventory/hand/L = owner.hud_used.hand_slots["[held_index]"]
 		if(L)
-			L.update_icon()
+			L.update_hand_vis()
 
 /obj/item/bodypart/l_arm/monkey
 	icon = 'icons/mob/animal_parts.dmi'
@@ -794,7 +831,7 @@
 	desc = ""
 	icon_state = "default_human_r_arm"
 	attack_verb = list("slapped", "punched")
-	max_damage = 100
+	max_damage = 200
 	body_zone = BODY_ZONE_R_ARM
 	body_part = ARM_RIGHT
 	aux_zone = BODY_ZONE_PRECISE_R_HAND
@@ -832,7 +869,7 @@
 	if(owner.hud_used)
 		var/atom/movable/screen/inventory/hand/R = owner.hud_used.hand_slots["[held_index]"]
 		if(R)
-			R.update_icon()
+			R.update_hand_vis()
 
 /obj/item/bodypart/r_arm/monkey
 	icon = 'icons/mob/animal_parts.dmi'
@@ -851,7 +888,7 @@
 	desc = ""
 	icon_state = "default_human_l_leg"
 	attack_verb = list("kicked", "stomped")
-	max_damage = 100
+	max_damage = 200
 	body_zone = BODY_ZONE_L_LEG
 	body_part = LEG_LEFT
 	body_damage_coeff = 1
@@ -901,7 +938,7 @@
 	// alternative spellings of 'pokey' are availible
 	icon_state = "default_human_r_leg"
 	attack_verb = list("kicked", "stomped")
-	max_damage = 100
+	max_damage = 200
 	body_zone = BODY_ZONE_R_LEG
 	body_part = LEG_RIGHT
 	body_damage_coeff = 1

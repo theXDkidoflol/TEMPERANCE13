@@ -70,6 +70,7 @@
 #define TRAIT_JACKOFALLTRADES "Jack of All Trades"	//Reduces skill up cost
 #define TRAIT_DEATHBYSNUSNU "Bed Breaker"
 #define TRAIT_ADRENALINE_RUSH "Adrenaline Rush"
+#define TRAIT_MEDICINE_EXPERT "Expert Surgeon" //on AP this is used for skillgating, but here it's just for people who can cut thru clothes
 
 
 //Hearthstone port (Tracking)
@@ -350,6 +351,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_FIREARMS_EXPERT = span_notice("I am an expert with firearms, and can chamber rounds more effectively."),
 	TRAIT_ADRENALINE_RUSH = span_notice("I'm invigorated in the midst of battle! I don't feel my wounds!"),
 	TRAIT_DEATHBYSNUSNU = span_notice("With strong intent, I am a violent partner in bed. Breaking pelvis and spirit alike."),
+	TRAIT_MEDICINE_EXPERT = span_greentext("I've deep, intricate knowledge of the medicinal arts. I can do surgery on someone in spite of them having clothes on."),
+
 ))
 
 // trait accessor defines

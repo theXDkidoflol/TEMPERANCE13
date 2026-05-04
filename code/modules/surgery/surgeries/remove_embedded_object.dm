@@ -60,3 +60,4 @@
 	else
 		to_chat(user, span_warning("I find no objects embedded in [target]!"))
 	return TRUE
+

@@ -168,10 +168,14 @@
 		if(crit_attempt)
 			if(ishuman(owner))
 				var/mob/living/carbon/human/human_owner = owner
+				human_owner.hud_used?.stressies?.flick_pain(TRUE)
 				if(user)
 					user.emote("attack", forced = TRUE)
 				human_owner.emote("paincrit", forced = TRUE)
 			return crit_attempt
+	if(ishuman(owner))
+		var/mob/living/carbon/human/human_owner = owner
+		human_owner.hud_used?.stressies?.flick_pain(FALSE)
 	return dynwound
 
 /obj/item/bodypart/proc/manage_dynamic_wound(bclass, dam, armor, pen_info)

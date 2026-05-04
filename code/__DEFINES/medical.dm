@@ -115,6 +115,10 @@
 #define ORGAN_EXTERNAL			(1<<3)
 /// Currently only the brain - Removal of this organ immediately kills you
 #define ORGAN_VITAL				(1<<4)
+/// Hides the organ from surgery.
+#define ORGAN_SURGERY_HIDDEN	(1<<5)
+/// Organ only exists internally and will be deleted if removed.
+#define ORGAN_INTERNAL_ONLY (1<<6)
 
 //wound severities for /datum/wound
 /// Wounds that are either surgically induced or too minor to matter

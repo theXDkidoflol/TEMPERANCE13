@@ -1,4 +1,7 @@
-/datum/surgery/extract_lux
+//Per the God-Emperor Zera's commands, this is disabled. Should still work if you need it, though.
+//-grey
+
+/*/datum/surgery/extract_lux
 	steps = list(
 		/datum/surgery_step/incise,
 		/datum/surgery_step/clamp,
@@ -53,3 +56,4 @@
 		GLOB.azure_round_stats[STATS_LUX_HARVESTED]++
 		target.apply_status_effect(/datum/status_effect/debuff/devitalised)
 	return TRUE
+*/

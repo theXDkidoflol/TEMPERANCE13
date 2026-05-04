@@ -571,9 +571,6 @@
 				else if(energy > 0)
 					hud_used.energy.icon_state = "energy10"
 
-		if(hud_used.zone_select)
-			hud_used.zone_select.update_icon()
-
 /mob/living/carbon/human/fully_heal(admin_revive = FALSE)
 	dna?.species.spec_fully_heal(src)
 	if(admin_revive)
@@ -582,7 +579,9 @@
 	spill_embedded_objects()
 	set_heartattack(FALSE)
 	drunkenness = 0
-	..()
+	. = ..()
+	if(hud_used?.zone_select)
+		hud_used.zone_select.rebuild_limbs()
 
 /mob/living/carbon/human/check_weakness(obj/item/weapon, mob/living/attacker)
 	. = ..()

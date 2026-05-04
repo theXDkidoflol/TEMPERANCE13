@@ -384,3 +384,6 @@
 		middragtime = 0
 		middragatom = null
 	..()
+
+/atom/proc/should_click_on_mouse_up(var/atom/original_object)
+	return TRUE

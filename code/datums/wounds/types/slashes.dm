@@ -25,7 +25,7 @@
 	sewn_clotting_threshold = 0.05
 	sew_threshold = 25
 
-/datum/wound/slash/large
+ 
 	name = "gruesome slash"
 	whp = 40
 	sewn_whp = 12
