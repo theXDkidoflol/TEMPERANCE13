@@ -631,7 +631,6 @@
 			stunmodifier = STAEND - 10
 		stunlength -= stunlength * (stunmodifier * WILLPOWER_STUN_MODIFIER)
 		Stun(stunlength)
-		Knockdown(stunlength)
 
 	if(!blood)
 		playsound(get_turf(src), pick('sound/vo/vomit.ogg','sound/vo/vomit_2.ogg'), 100, TRUE)

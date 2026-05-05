@@ -312,13 +312,17 @@
 	if(get_num_legs() < 2)
 		return FALSE
 	if(pulledby && pulledby != src)
-		to_chat(src, span_warning("I'm being grabbed."))
+		to_chat(src, span_danger("*THEY WON'T LET GO!*"))
+		return FALSE
+	if(IsStun())
+		message_admins("IsStun returned [IsStun()], canceling jump]")//TODOREMOVE
+		to_chat(src, span_danger("*OH, SHIT!*"))
 		return FALSE
 	if(IsOffBalanced())
-		to_chat(src, span_warning("I haven't regained my balance yet."))
+		to_chat(src, span_danger("*CAN'T KEEP MY FOOTING!*"))
 		return FALSE
 	if(!(mobility_flags & MOBILITY_STAND) && !HAS_TRAIT(src, TRAIT_LEAPER))// The Jester cares not for such social convention.
-		to_chat(src, span_warning("I should stand up first."))
+		to_chat(src, span_danger("*NEED TO GET UP!*"))
 		return FALSE
 	if(A.z != z && !HAS_TRAIT(src, TRAIT_ZJUMP))
 		return FALSE
@@ -599,36 +603,8 @@
 		to_chat(src, span_warning("I can't jump while floating."))
 		return
 
-	if(!A || QDELETED(A) || !A.loc)
+	if(!can_jump(A))
 		return
-
-	if(A == src || A == loc)
-		return
-
-	if(src.get_num_legs() < 2)
-		return
-
-	if(pulledby && pulledby != src)
-		to_chat(src, span_warning("I'm being grabbed."))
-		resist_grab()
-		return
-
-	if(IsOffBalanced())
-		to_chat(src, span_warning("I haven't regained my balance yet."))
-		return
-
-	if(!(mobility_flags & MOBILITY_STAND))
-		if(!HAS_TRAIT(src, TRAIT_LEAPER))// The Jester cares not for such social convention.
-			to_chat(src, span_warning("I should stand up first."))
-			return
-
-	if(!isatom(A))
-		return
-
-	if(A.z != z)
-		if(!HAS_TRAIT(src, TRAIT_ZJUMP))
-			to_chat(src, span_warning("That's too high for me..."))
-			return
 
 	changeNext_move(mmb_intent.clickcd)
 
