@@ -42,14 +42,7 @@
 #define CANPUSH			(1<<3)
 #define GODMODE			(1<<4)
 
-//Health Defines
-#define HEALTH_THRESHOLD_CRIT 0
-#define HEALTH_THRESHOLD_FULLCRIT 0
-#define HEALTH_THRESHOLD_DEAD -100
 
-#define HEALTH_THRESHOLD_NEARDEATH -90 //Not used mechanically, but to determine if someone is so close to death they hear the other side
-
-#define DAMAGE_THRESHOLD_FIRE_CRIT 150
 #define STRENGTH_SOFTCAP 14	//STR value past which we get diminishing returns in our damage calculations.
 #define STRENGTH_MULT 0.1	//STR multiplier per STR point up to the softcap. Works as a %-age. 0.1 = 10% per point.
 #define STRENGTH_CAPPEDMULT 0.034	//STR multiplier per STR point past the softcap
@@ -369,6 +362,15 @@ Medical defines
 #define CONSTITUTION_BLEEDRATE_MOD 0.05	//How much slower we'll be bleeding for every CON point. 0.1 = 10% slower.
 #define CONSTITUTION_BLEEDRATE_CAP 20	//The CON value up to which we get a bleedrate reduction.
 
+#define HEALTH_THRESHOLD_CRIT 0
+#define HEALTH_THRESHOLD_FULLCRIT 0
+#define HEALTH_THRESHOLD_DEAD -100
+
+#define HEALTH_THRESHOLD_NEARDEATH -90 //Not used mechanically, but to determine if someone is so close to death they hear the other side
+
+#define DAMAGE_THRESHOLD_BRUTE_CRIT 100 //damage done to health if the head or chest is at max damage of this type, consider adjusting a bodypart's max damage if needed
+#define DAMAGE_THRESHOLD_FIRE_CRIT 150 //ditto
+
 #define WILLPOWER_STARTING_STAMINA 135	//Starting stamina (green bar) value. Before major changes this would represent Expert Athletics + ~11.5 WIL 
 #define WILLPOWER_MODIFIER	5	//How much stamina (flat value) we gain (or lose) for every WIL above / below 10.
 
@@ -378,6 +380,9 @@ Medical defines
 #define VOMITSTUN_LENGTH 20 //How long vomitstuns last (including vomitting blood)
 #define WILLPOWER_STUN_MODIFIER 0.05//How much willpower effects stun length
 #define WILLPOWER_STUN_CAP 15 //How much willpower max will effect your stun length
+
+#define CRIT_DAMAGE_THRESHOLD 0.3 // x% damage threshold for crits on a limb
+
 /*
 	Critical Resistance Defines 
 */
@@ -394,6 +399,5 @@ Medical defines
  Misc. Category. Spin it out if needed
 */
 
-#define CRIT_DISMEMBER_DAMAGE_THRESHOLD 0.9 // 90% damage threshold for dismemberment / crit
 #define STANDING_DECAP_GRACE_PERIOD 2 SECONDS // Time after falling prone where you still count as standing for decap purpose
 #define INT_NOISE_DELAY 1 SECONDS

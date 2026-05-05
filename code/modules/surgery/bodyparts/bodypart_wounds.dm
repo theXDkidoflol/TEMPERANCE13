@@ -148,7 +148,7 @@
 			acheck_dflag = "fire"
 	if(!armor)
 		armor = owner.run_armor_check(zone_precise, acheck_dflag, damage = 0)
-	if(get_damage() <= (max_damage * CRIT_DISMEMBER_DAMAGE_THRESHOLD)) //No crits unless the limb is at 90%+ damage.
+	if(get_damage() <= (max_damage * CRIT_DAMAGE_THRESHOLD)) //No crits unless the limb is at threshold.
 		do_crit = FALSE
 	if(do_crit && ishuman(owner) && bclass != BCLASS_PICK) // Armor with integrity prevents crits
 		var/mob/living/carbon/human/H = owner
@@ -312,7 +312,7 @@
 		if(prob(used))
 			attempted_wounds += fracture_type
 	if(bclass in GLOB.artery_bclasses)
-		used = round(damage_dividend * 20 + (dam / 4))
+		used = round(damage_dividend * (dam / 4))
 		if(user)
 			if((bclass in GLOB.artery_strong_bclasses) && istype(user.rmb_intent, /datum/rmb_intent/strong))
 				used += 10
