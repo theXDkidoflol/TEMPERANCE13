@@ -92,8 +92,16 @@
 						Immobilize(10)
 						emote("painscream")
 						stuttering += 5
-						addtimer(CALLBACK(src, PROC_REF(Stun), 110), 10)
-						addtimer(CALLBACK(src, PROC_REF(Knockdown), 110), 10)
+						var/stunmodifier = 1
+						var/stunlength = PAINSTUN_LENGTH
+						message_admins("Initial stunlength is [stunlength]")//TODOREMOVE
+						if(STAEND >= WILLPOWER_STUN_CAP)
+							stunmodifier = WILLPOWER_STUN_CAP - 10
+						else if (STAEND != 10)
+							stunmodifier = STAEND - 10
+						stunlength -= stunlength * (stunmodifier * WILLPOWER_STUN_MODIFIER)
+						addtimer(CALLBACK(src, PROC_REF(Stun), stunlength), 10)
+						addtimer(CALLBACK(src, PROC_REF(Knockdown), stunlength), 10)
 						mob_timers["painstun"] = world.time + 160
 					else
 						emote("painmoan")

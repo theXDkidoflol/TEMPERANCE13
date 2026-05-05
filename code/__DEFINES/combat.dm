@@ -374,6 +374,10 @@ Medical defines
 
 #define SPEED_MOVSPD_MOD 0.075	//Multiplicative modifier for our speed, per point (for both <10 and >10 values)
 
+#define PAINSTUN_LENGTH 30 //How long painstuns last (+1 second)
+#define VOMITSTUN_LENGTH 20 //How long vomitstuns last (including vomitting blood)
+#define WILLPOWER_STUN_MODIFIER 0.05//How much willpower effects stun length
+#define WILLPOWER_STUN_CAP 15 //How much willpower max will effect your stun length
 /*
 	Critical Resistance Defines 
 */

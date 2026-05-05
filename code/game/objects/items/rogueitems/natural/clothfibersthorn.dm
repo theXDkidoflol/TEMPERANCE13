@@ -285,21 +285,21 @@
 	if(!istype(C))
 		return ..()
 	if(C.reagents.has_reagent(/datum/reagent/medicine/healthpot, 10) && !medicine_amount)
-		to_chat(user, span_notice("You start soaking the [src] in lyfeblood..."))
+		to_chat(user, span_notice("You start soaking the [src] in red..."))
 		if(do_after(user, 3 SECONDS, target = src))
 			C.reagents.remove_reagent(/datum/reagent/medicine/healthpot, 10)
 			medicine_quality = 1
 			medicine_amount += 10
-			desc += " It has been soaked in lyfeblood."
+			desc += " It has been soaked in red."
 			detail_color = "#ff0000"
 			update_icon()
 	if(C.reagents.has_reagent(/datum/reagent/medicine/stronghealth, 10) && !medicine_amount)
-		to_chat(user, span_notice("You start soaking the [src] in strong lyfeblood..."))
+		to_chat(user, span_notice("You start soaking the [src] in strong red..."))
 		if(do_after(user, 3 SECONDS, target = src))
 			C.reagents.remove_reagent(/datum/reagent/medicine/stronghealth, 10)
 			medicine_quality = 2
 			medicine_amount += 10
-			desc += " It has been soaked in strong lyfeblood."
+			desc += " It has been soaked in strong red."
 			detail_color = "#820000"
 			update_icon()
 	if(C.reagents.has_reagent(/datum/reagent/consumable/ethanol/aqua_vitae, 10) && !medicine_amount)
@@ -321,12 +321,12 @@
 			detail_color = "#6a9295"
 			update_icon()
 	if(C.reagents.has_reagent(/datum/reagent/water/medicine, 10) && !medicine_amount)
-		to_chat(user, span_notice("You start soaking the [src] in Panaceaic Medicine..."))
+		to_chat(user, span_notice("You start soaking the [src] in panaceaic medicine..."))
 		if(do_after(user, 3 SECONDS, target = src))
 			C.reagents.remove_reagent(/datum/reagent/water/medicine, 10)
 			medicine_quality = 0.6 //cheap yet not very common
 			medicine_amount += 30 // medicine_amount is equal to half the medication duration on a bandage, this will heal a total of 36 on a targeted area
-			desc += " It has been soaked in Panaceaic Medicine."
+			desc += " It has been soaked in panaceaic medicine."
 			detail_color = "#428b42"
 			update_icon()
 

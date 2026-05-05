@@ -623,7 +623,15 @@
 			visible_message("<span class='danger'>[src] coughs up blood!</span>", "<span class='danger'>I cough up blood!</span>")
 
 	if(stun)
-		Immobilize(59)
+		var/stunmodifier = 1
+		var/stunlength = VOMITSTUN_LENGTH
+		if(STAEND >= WILLPOWER_STUN_CAP)
+			stunmodifier = WILLPOWER_STUN_CAP - 10
+		else if (STAEND != 10)
+			stunmodifier = STAEND - 10
+		stunlength -= stunlength * (stunmodifier * WILLPOWER_STUN_MODIFIER)
+		Stun(stunlength)
+		Knockdown(stunlength)
 
 	if(!blood)
 		playsound(get_turf(src), pick('sound/vo/vomit.ogg','sound/vo/vomit_2.ogg'), 100, TRUE)
