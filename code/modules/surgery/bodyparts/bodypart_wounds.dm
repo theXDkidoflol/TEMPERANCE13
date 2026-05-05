@@ -189,8 +189,10 @@
 			woundtype = /datum/wound/dynamic/slash
 		if(BCLASS_STAB)
 			woundtype = /datum/wound/dynamic/puncture
-		if(BCLASS_PICK, BCLASS_PIERCE)
+		if(BCLASS_PICK)
 			woundtype = /datum/wound/dynamic/gouge
+		if(BCLASS_PIERCE)
+			woundtype = /datum/wound/dynamic/perforation
 		if(BCLASS_LASHING)
 			woundtype = /datum/wound/dynamic/lashing
 		if(BCLASS_PUNISH)

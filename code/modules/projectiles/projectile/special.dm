@@ -1,7 +1,7 @@
 /obj/projectile/bullet/flamer
 	name = "flamer napalm"
 	icon_state = "flame"
-	damage = 40
+	damage = 25
 	armor_penetration = 30
 	hitscan = FALSE
 	ignore_source_check = TRUE

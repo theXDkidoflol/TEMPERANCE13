@@ -4,6 +4,7 @@ GLOBAL_LIST_INIT(fracture_bclasses, list(
 	BCLASS_CHOP,
 	BCLASS_PICK,
 	BCLASS_PUNCH,
+	BCLASS_PIERCE,
 ))
 
 GLOBAL_LIST_INIT(artery_bclasses, list(
@@ -22,7 +23,6 @@ GLOBAL_LIST_INIT(artery_strong_bclasses, list(
 
 GLOBAL_LIST_INIT(artery_heart_bclasses, list(
 	BCLASS_PICK,
-	BCLASS_PIERCE,
 ))
 
 GLOBAL_LIST_INIT(dislocation_bclasses, list(

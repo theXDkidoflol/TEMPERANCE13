@@ -95,6 +95,10 @@
 	if(prob(P.embedchance) && P.dropped)
 		BP.add_embedded_object(P.dropped, silent = FALSE, crit_message = TRUE)
 		return TRUE
+	if(prob(P.embedchance) && istype(P, /obj/projectile/bullet))
+		var/obj/item/embedshrap/I = new /obj/item/embedshrap()
+		BP.add_embedded_object(I, silent = FALSE, crit_message = TRUE, ranged = TRUE)
+		return TRUE
 	return FALSE
 
 /mob/living/carbon/send_pull_message(mob/living/target)

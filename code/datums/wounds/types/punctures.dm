@@ -169,3 +169,66 @@
 /datum/wound/puncture/drilling/cauterize_wound()
 	qdel(src)
 	return TRUE
+
+/datum/wound/dynamic/perforation
+	name = "perforation"
+	whp = 15
+	sewn_whp = 5
+	bleed_rate = 1
+	sew_threshold = 25
+	woundpain = 5
+	clotting_rate = 0.1
+	clotting_threshold = 0.25
+
+	sewn_clotting_threshold = null
+	sewn_clotting_rate = null
+	sewn_bleed_rate = null
+	
+	can_sew = TRUE
+	can_cauterize = TRUE
+	severity_names = list(
+		"small" = 2,
+		"moderate" = 5,
+		"large" = 10,
+		"massive" = 15,
+		"lethal" = 20,
+	)
+
+//Perforation Omniwounds
+//Vaguely: High bleeding that gets worse REAL fast, low pain. Quick to sew, doesn't scale too well with armor.
+
+#define PERFORATION_UPG_BLEEDRATE 0.3
+#define PERFORATION_UPG_WHPRATE 2.0
+#define PERFORATION_UPG_SEWRATE 4.0
+#define PERFORATION_UPG_PAINRATE 0.1
+#define PERFORATION_UPG_CLAMP_ARMORED 1.5
+#define PERFORATION_UPG_CLAMP_RAW 2.0
+#define PERFORATION_ARMORED_BLEED_CLAMP 8
+
+/datum/wound/dynamic/perforation/upgrade(dam, armor, exposed, pen_info)
+	whp += (dam * PERFORATION_UPG_WHPRATE)
+	if((!armor || exposed))
+		set_bleed_rate(bleed_rate + PERFORATION_UPG_CLAMP_RAW)
+	else
+		switch(pen_info)
+			if(1 to 2)
+				set_bleed_rate(bleed_rate + 0.5)
+			if(3 to 4)
+				set_bleed_rate(bleed_rate + 0.6)
+			if(5 to 6)
+				set_bleed_rate(bleed_rate + 0.7)
+			if(7 to 8)
+				set_bleed_rate(bleed_rate + PERFORATION_UPG_CLAMP_ARMORED)
+	sew_threshold += (dam * PERFORATION_UPG_SEWRATE)
+	woundpain += (dam * PERFORATION_UPG_PAINRATE)
+	armor_check(armor, PERFORATION_ARMORED_BLEED_CLAMP)
+	update_name()
+	..()
+
+#undef PERFORATION_UPG_BLEEDRATE
+#undef PERFORATION_UPG_WHPRATE
+#undef PERFORATION_UPG_SEWRATE
+#undef PERFORATION_UPG_PAINRATE
+#undef PERFORATION_UPG_CLAMP_ARMORED
+#undef PERFORATION_UPG_CLAMP_RAW
+#undef PERFORATION_ARMORED_BLEED_CLAMP
