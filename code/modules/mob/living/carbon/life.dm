@@ -94,7 +94,6 @@
 						stuttering += 5
 						var/stunmodifier = 1
 						var/stunlength = PAINSTUN_LENGTH
-						message_admins("Initial stunlength is [stunlength]")//TODOREMOVE
 						if(STAEND >= WILLPOWER_STUN_CAP)
 							stunmodifier = WILLPOWER_STUN_CAP - 10
 						else if (STAEND != 10)
