@@ -79,6 +79,13 @@
 				/obj/item/natural/fibers = 1)
 	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/sewing/bandage
+	name = "bandages (sewing)"
+	result = list(/obj/item/natural/cloth/bandage)
+	reqs = list(/obj/item/natural/cloth = 3)
+	subtype_reqs = FALSE //so you cant continuously craft bandages from bandages
+	craftdiff = 1
+
 /datum/crafting_recipe/roguetown/sewing/fabricbedsheet // cloth bedsheet's fancier looking cousin
 	name = "bedsheet, fabric (1 fibers, 2 cloth, 1 silk)"
 	result = list(/obj/item/bedsheet/rogue/fabric)

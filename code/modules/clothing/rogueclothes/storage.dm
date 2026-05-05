@@ -56,6 +56,7 @@
 	populate_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew,
+		/obj/item/natural/bundle/cloth/bandage/full,
 	)
 
 /obj/item/storage/belt/rogue/leather/plaquesilver
