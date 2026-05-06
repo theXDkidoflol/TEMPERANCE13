@@ -172,7 +172,7 @@
 
 /datum/wound/dynamic/perforation
 	name = "perforation"
-	whp = 15
+	whp = 10
 	sewn_whp = 5
 	bleed_rate = 1
 	sew_threshold = 25
@@ -198,8 +198,8 @@
 //Vaguely: High bleeding that gets worse REAL fast, low pain. Quick to sew, doesn't scale too well with armor.
 
 #define PERFORATION_UPG_BLEEDRATE 0.3
-#define PERFORATION_UPG_WHPRATE 2.0
-#define PERFORATION_UPG_SEWRATE 0.5
+#define PERFORATION_UPG_WHPRATE 0.5
+#define PERFORATION_UPG_SEWRATE 0.75
 #define PERFORATION_UPG_PAINRATE 0.1
 #define PERFORATION_UPG_CLAMP_ARMORED 1.5
 #define PERFORATION_UPG_CLAMP_RAW 2.0
