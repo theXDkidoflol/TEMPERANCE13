@@ -118,8 +118,14 @@
 ///Speak as a dead person (ghost etc)
 /mob/proc/say_dead(message)
 	var/turf/T = get_turf(src)
+	if(src.client.prefs.muted & MUTE_DEADCHAT)
+		to_chat(src, span_danger("I cannot use Deadchat (temp muted)."))
+		return
 	if(is_banned_from(src.ckey, "Deadchat"))
-		to_chat(src, span_danger("My voice has been stripped by Rab. I cannot speak."))
+		to_chat(src, span_danger("I cannot use Deadchat (perma muted)."))
+		return
+	if(!GLOB.deadchat_allowed)
+		to_chat(src, span_danger("Deadchat is currently disabled."))
 		return
 	deadchat_broadcast(" says, \"[message]\"", "<b>[real_name]</b>", src, T, src.ckey, DEADCHAT_REGULAR)
 	return 
