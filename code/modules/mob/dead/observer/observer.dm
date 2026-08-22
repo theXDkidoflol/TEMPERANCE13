@@ -67,6 +67,7 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/next_gmove
 	var/misting = 0
 	draw_icon = TRUE
+	hud_type = /datum/hud/adminghost //as far as i can tell it's fine if players have this
 
 /mob/dead/observer/admin
 	hud_type = /datum/hud/adminghost
@@ -80,7 +81,7 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 /mob/dead/observer/rogue/Move(n, direct)
 	if(world.time < next_gmove)
 		return
-	next_gmove = world.time + 2
+	next_gmove = world.time + 1
 
 	setDir(direct)
 
@@ -578,8 +579,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	set name = "Teleport"
 	set desc= "Teleport to a location"
 	set hidden = 1
-	if(!check_rights(R_WATCH))
-		return
+/*	if(!check_rights(R_WATCH))
+		return*/
 	if(!isobserver(usr))
 		to_chat(usr, span_warning("Not when you're not dead!"))
 		return

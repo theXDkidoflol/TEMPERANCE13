@@ -117,8 +117,10 @@
 
 ///Speak as a dead person (ghost etc)
 /mob/proc/say_dead(message)
-
-	return // RTCHANGE
+	var/turf/T = get_turf(src)
+	deadchat_broadcast(" says, \"[message]\"", "<b>[real_name]</b>", src, T, src.ckey, DEADCHAT_REGULAR)
+	return 
+	//deadchat_broadcast(" has died at <b>[get_area_name(T)]</b>.", "<b>[mind.name]</b>", follow_target = src, turf_target = T, message_type=DEADCHAT_DEATHRATTLE)
 
 ///Check if this message is an emote
 /mob/proc/check_emote(message, forced)
