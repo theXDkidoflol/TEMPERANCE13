@@ -118,6 +118,9 @@
 ///Speak as a dead person (ghost etc)
 /mob/proc/say_dead(message)
 	var/turf/T = get_turf(src)
+	if(is_banned_from(src.ckey, "Deadchat"))
+		to_chat(src, span_danger("My voice has been stripped by Rab. I cannot speak."))
+		return
 	deadchat_broadcast(" says, \"[message]\"", "<b>[real_name]</b>", src, T, src.ckey, DEADCHAT_REGULAR)
 	return 
 	//deadchat_broadcast(" has died at <b>[get_area_name(T)]</b>.", "<b>[mind.name]</b>", follow_target = src, turf_target = T, message_type=DEADCHAT_DEATHRATTLE)
