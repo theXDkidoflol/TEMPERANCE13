@@ -138,21 +138,11 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 				T = get_turf(Y)
 
 		gender = body.gender
-		if(body.mind && body.mind.name)
-			if(body.mind.ghostname)
-				name = body.mind.ghostname
-			else
-				name = body.mind.name
-		else
-			if(body.real_name)
-				name = body.real_name
-			else
-				name = random_unique_name(gender)
+
 
 		mind = body.mind	//we don't transfer the mind but we keep a reference to it.
 
 		set_suicide(body.suiciding) // Transfer whether they committed suicide.
-
 		if(draw_icon)
 			if(ishuman(body))
 //				var/mob/living/carbon/human/body_human = body
@@ -181,14 +171,21 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 				facial_hairstyle = body_human.facial_hairstyle
 				facial_hair_color = brighten_color(body_human.facial_hair_color)
 			*/
+		if(body.mind && body.mind.name)
+			if(body.mind.ghostname)
+				name = body.mind.ghostname
+			else if(body.real_name && body.real_name != "Unknown")
+				name = body.real_name
+			else if(body.name && body.name != "Unknown")
+				name = body.mind.name
+			else
+				name = random_unique_name(gender)
 	update_icon()
-
 	if(!T)
 		testing("NO T")
 		T = SSmapping.get_station_center()
 
 	forceMove(T)
-
 	if(!name)							//To prevent nameless ghosts
 		name = random_unique_name(gender)
 	real_name = name
